@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_corner"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="20dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/share_to_wechat_friend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/dialog_wechat_friend_selector"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/wechat"
+            android:textColor="#8d8d8d"
+            android:textSize="@dimen/more_button_font_size" />
+
+        <Button
+            android:id="@+id/share_to_wechat_moment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/dialog_wechat_moment_selector"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/wechat_moment"
+            android:textColor="#8d8d8d"
+            android:textSize="@dimen/more_button_font_size" />
+
+        <Button
+            android:id="@+id/share_to_qq_friend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/dialog_qq_friend_selector"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/qq"
+            android:textColor="#8d8d8d"
+            android:textSize="@dimen/more_button_font_size" />
+
+         <Button
+            android:id="@+id/share_to_weibo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/dialog_weibo_selector"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/weibo"
+            android:textColor="#8d8d8d"
+            android:textSize="@dimen/more_button_font_size" />
+    </LinearLayout>
+
+</LinearLayout>

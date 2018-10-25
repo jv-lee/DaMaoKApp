@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="图片加载中"
+            android:textColor="@color/secondary_textcolor"
+            android:textSize="15sp" />
+
+        <jp.co.cyberagent.android.gpuimage.GPUImageView
+            android:id="@+id/edit_crop_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center" />
+    </RelativeLayout>
+
+    <com.jess.ui.TwoWayGridView
+        android:id="@+id/effect_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_above="@id/diy_tab"
+        android:background="@color/trans_75_black"
+        android:padding="2dp"
+        android:scrollbars="none"
+        android:visibility="invisible"
+        app:cacheColorHint="@android:color/transparent"
+        app:gravity="center"
+        app:listSelector="@android:color/transparent"
+        app:numColumns="auto_fit"
+        app:numRows="1"
+        app:scrollDirectionLandscape="horizontal"
+        app:scrollDirectionPortrait="horizontal"
+        app:twoway_horizontalSpacing="2dp"
+        app:twoway_verticalSpacing="0dp" />
+
+    <LinearLayout
+        android:id="@+id/diy_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_min_height"
+            android:background="@color/banner_bg"
+            android:gravity="center"
+            android:minHeight="@dimen/tab_min_height"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/activity_editwallpaper_ll_crop"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/tab_min_height"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_crop" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="10dip"
+                android:layout_gravity="center_vertical"
+                android:background="@color/trans_white" />
+
+            <LinearLayout
+                android:id="@+id/activity_editwallpaper_ll_effect"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/tab_min_height"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_effect" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="10dip"
+                android:layout_gravity="center_vertical"
+                android:background="@color/trans_white" />
+
+            <LinearLayout
+                android:id="@+id/activity_editwallpaper_ll_save"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/tab_min_height"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_save" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

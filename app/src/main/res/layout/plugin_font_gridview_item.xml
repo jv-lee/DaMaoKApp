@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemlayout"
+    android:layout_width="57dp"
+    android:layout_height="57dp" >
+
+    <com.lockstudio.sticklocker.view.SquareWheelProcessView
+        android:id="@+id/swp_progress"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp" >
+
+        <TextView
+            android:id="@+id/tv_font_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="24sp" >
+        </TextView>
+
+         <TextView
+             android:id="@+id/tv_font_show_2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@color/white"
+             android:textSize="16sp" >
+
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_font_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="3dp"
+        android:text="@string/font_size"
+        android:textColor="@color/white"
+        android:textSize="12sp" >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/select_imageview"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dash_white_selector"
+        android:visibility="gone" />
+
+</RelativeLayout>

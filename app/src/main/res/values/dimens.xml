@@ -1,0 +1,41 @@
+<resources>
+    <dimen name="main_title_bar_min_height">44dp</dimen>
+    <dimen name="main_title_bar_font_size">28sp</dimen>
+    <dimen name="tab_min_height">44dp</dimen>
+    <dimen name="tab_float_button_size">36dp</dimen>
+    <dimen name="tab_button_font_size">10sp</dimen>
+    <dimen name="plugin_tab_button_font_size">14sp</dimen>
+    <dimen name="tab_button_padding_drawable">2.0dip</dimen>
+    <dimen name="more_button_font_size">12sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">20dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="diy_tab_button_font_size">13sp</dimen>
+    <dimen name="dialog_width">280dp</dimen>
+    <dimen name="lock_patternview_width">240dp</dimen>
+    <dimen name="lock_patternview_12_height">320dp</dimen>
+    <dimen name="about_logo_size">120dp</dimen>
+    <dimen name="about_logo_size_half">60dp</dimen>
+    <dimen name="color_circle_width">28dp</dimen>
+    <dimen name="controller_min_height">120dp</dimen>
+    <dimen name="defaultStickerTextSize">20sp</dimen>
+    <dimen name="defaultStickerImageWidth">80dp</dimen>
+    <dimen name="statusbar_textsize">12sp</dimen>
+    <dimen name="default_time_textsize">50sp</dimen>
+    <dimen name="default_time_textsize_2">16sp</dimen>
+    <dimen name="upload_dialog_margin_top">100dp</dimen>
+    <dimen name="min_toast_width">120dp</dimen>
+    <dimen name="word_lock_height">325dp</dimen>
+    <dimen name="word_lock_width">275dp</dimen>
+    
+    <!-- 标题栏 padding -->
+    <dimen name="padding_maintop">10dp</dimen>
+    <dimen name="title_bar_height_min">52dp</dimen>
+    <dimen name="more_back">3dp</dimen>
+    <dimen name="title_bar_right_size">18sp</dimen>
+    
+    <dimen name="bottom_ll_height">58sp</dimen>
+    <dimen name="bottom_btn_width">158dp</dimen>
+    <dimen name="bottom_btn_height">38dp</dimen>
+    <dimen name="bottom_btn_empty_blue_textssize">14sp</dimen>
+</resources>

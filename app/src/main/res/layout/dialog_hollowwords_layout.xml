@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_corner"
+    android:minWidth="300dp"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:drawableLeft="@drawable/icon_down_hollow"
+        android:drawablePadding="5dp"
+        android:text="@string/down_word"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/down_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_corner_gray"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:inputType="text"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/icon_up_hollow"
+        android:drawablePadding="5dp"
+        android:text="@string/up_word"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/up_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_corner_gray"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:inputType="text"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/dialog_button_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_grey_selector"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="@string/cancle"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/button_zhanwei_view"
+            android:layout_width="10dp"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/dialog_button_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_red_selector"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="@string/complete"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

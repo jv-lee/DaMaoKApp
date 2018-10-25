@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/dm_endview_appview_lin_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/dm_press_list_bai_havebk"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/dm_endview_appview_re_one"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16.6dp" >
+
+            <TextView
+                android:id="@+id/dm_endview_appview_tv_download"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/dm_press_button_applist"
+                android:gravity="center"
+                android:text="下载"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/dm_endview_appview_img_icon"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/dm_icon_ball_one" />
+
+            <TextView
+                android:id="@+id/dm_endview_appview_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/dm_endview_appview_img_icon"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="1.5dp"
+                android:layout_toRightOf="@+id/dm_endview_appview_img_icon"
+                android:ellipsize="end"
+                android:maxWidth="170dp"
+                android:singleLine="true"
+                android:text="高德导航高德导航高德导航高德导航高德导航高德导航高德导航高德导航高德导航"
+                android:textColor="#4a4a4a"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/dm_endview_appview_tv_ms"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/dm_endview_appview_tv_name"
+                android:layout_below="@+id/dm_endview_appview_tv_name"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="1dp"
+                android:singleLine="true"
+                android:text="为车主提供的安全"
+                android:textColor="#767676"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/dm_endview_appview_img_pic"
+            android:layout_width="fill_parent"
+            android:layout_height="173.25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dm_icon_ball_one"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/main_title_bar_color"
+    android:gravity="center_vertical" >
+
+    <ImageButton
+        android:id="@+id/title_bar_left_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:background="@drawable/icon_edit_banner_back"
+        android:padding="10dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/title_bar_left_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:drawableLeft="@drawable/icon_edit_banner_back"
+        android:drawablePadding="@dimen/padding_maintop"
+        android:gravity="center"
+        android:minWidth="@dimen/title_bar_height_min"
+        android:paddingLeft="@dimen/more_back"
+        android:paddingRight="@dimen/padding_maintop"
+        android:singleLine="true"
+        android:textColor="#606060"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/title_bar_right_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawablePadding="2dp"
+        android:gravity="center"
+        android:minWidth="@dimen/title_bar_height_min"
+        android:text="主题商店"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/title_bar_right_size" />
+
+    <ImageButton
+        android:id="@+id/title_bar_right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/banner_download"
+        android:visibility="gone" />
+
+</RelativeLayout>

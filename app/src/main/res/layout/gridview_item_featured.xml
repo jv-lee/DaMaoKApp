@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="3dp" >
+
+    <com.lockstudio.sticklocker.view.RoundAngleImageView
+        android:id="@+id/gridview_item_featrued_thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:roundWidth="5dp"
+		app:roundHeight="5dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/black_mask_selector"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:id="@+id/feature_favorite_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gridview_firstpage_shape"
+        android:gravity="center_vertical|right"
+        android:padding="3dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/gridview_item_featrued_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/featured_heart_pressed"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/featured_heart_pressed"
+            android:text="100"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+    </RelativeLayout>
+    <!--  大猫广告位
+    <RelativeLayout 
+         android:id="@+id/featured_dm_item" 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:scaleType="fitXY"
+         android:visibility="gone"
+         android:background="@drawable/gridview_firstpage_shape_dm" >
+    </RelativeLayout>
+    -->
+
+</RelativeLayout>

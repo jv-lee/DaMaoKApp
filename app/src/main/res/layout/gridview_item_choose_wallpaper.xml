@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="122dp"
+    android:paddingLeft="1.5dp"
+    android:paddingRight="1.5dp" >
+
+    <ImageView
+        android:id="@+id/wallpaper_imageview"
+        android:layout_width="72dp"
+        android:layout_height="122dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/wallpaper_thumbnail_default"
+        android:src="@drawable/black_mask_selector"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/wallpaper_textview"
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+        android:minWidth="60dp"
+        android:gravity="center"
+        android:text="@string/open_album"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</FrameLayout>

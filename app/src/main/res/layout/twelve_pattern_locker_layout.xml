@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lockstudio.sticklocker.view.LockPatternView_12 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nine_pattern_lockerview"
+    android:layout_width="@dimen/lock_patternview_width"
+    android:layout_height="@dimen/lock_patternview_12_height"
+    android:layout_gravity="center_horizontal" />

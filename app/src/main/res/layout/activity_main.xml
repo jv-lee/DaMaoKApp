@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_title_bar_color" >
+
+    <RelativeLayout
+        android:id="@+id/main_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_tab_background_color"
+        android:gravity="center"
+        android:minHeight="@dimen/tab_min_height" >
+
+        <RadioGroup
+            android:id="@+id/main_tab_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:minHeight="@dimen/tab_min_height"
+            android:orientation="horizontal"
+            android:paddingBottom="1.0dp"
+            android:paddingTop="2.0dip" >
+
+            <RadioButton
+                android:id="@+id/main_tab_featured"
+                style="@style/main_tab_button"
+                android:checked="true"
+                android:drawableTop="@drawable/main_tab_featured_selector"
+                android:text="@string/main_tab_featured"
+                android:textColor="@drawable/text_main_color_selector" />
+
+            <RadioButton
+                android:id="@+id/main_tab_wallpaper"
+                style="@style/main_tab_button"
+                android:drawableTop="@drawable/main_tab_wallpaper_selector"
+                android:text="@string/main_tab_wallpaper"
+                android:textColor="@drawable/text_main_color_selector" />
+
+            <RadioButton
+                android:id="@+id/main_tab_center"
+                style="@style/main_tab_button"
+                android:visibility="invisible" />
+
+            <RadioButton
+                android:id="@+id/main_tab_competition"
+                style="@style/main_tab_button"
+                android:drawableTop="@drawable/main_tab_diy_selector"
+                android:text="@string/main_tab_competition"
+                android:textColor="@drawable/text_main_color_selector" />
+
+            <RadioButton
+                android:id="@+id/main_tab_more"
+                style="@style/main_tab_button"
+                android:drawableTop="@drawable/main_tab_more_selector"
+                android:text="@string/main_tab_more"
+                android:textColor="@drawable/text_main_color_selector" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <com.lockstudio.sticklocker.view.NoScrollViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_tab_bar"
+        android:layout_gravity="center"
+        android:background="@color/main_background_color"
+        android:flipInterval="30"
+        android:persistentDrawingCache="none" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/main_tab_bar"
+        android:background="@drawable/main_tab_shadow"
+        android:contentDescription="@string/app_name"
+        android:scaleType="matrix" />
+
+    <ImageView
+        android:id="@+id/main_tab_diy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/main_tab_find_selector" />
+
+    <!-- 
+    <include layout="@layout/splash" />
+     -->
+
+</RelativeLayout>

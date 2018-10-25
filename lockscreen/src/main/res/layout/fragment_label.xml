@@ -1,0 +1,60 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.yuan7.lockscreen.model.entity.Status" />
+
+        <variable
+            name="viewModel"
+            type="com.yuan7.lockscreen.viewmodel.LabelViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            visibleGone="@{viewModel.status == Status.LOADING}"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/progress_ainm" />
+
+        <TextView
+            visibleGone="@{viewModel.status == Status.ERROR}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/load_error" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_container"
+            visibleGone="@{viewModel.status == Status.SUCCESS}"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/item_margin" />
+
+        <!--<ProgressBar-->
+        <!--visibleGone="@{status == Status.LOADING}"-->
+        <!--android:layout_width="28dp"-->
+        <!--android:layout_height="28dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:indeterminateDrawable="@drawable/progress_ainm" />-->
+
+        <!--<TextView-->
+        <!--visibleGone="@{status == Status.ERROR}"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:text="@string/load_error" />-->
+
+        <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/rv_container"-->
+        <!--visibleGone="@{status == Status.SUCCESS}"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginLeft="@dimen/item_margin" />-->
+
+    </FrameLayout>
+</layout>

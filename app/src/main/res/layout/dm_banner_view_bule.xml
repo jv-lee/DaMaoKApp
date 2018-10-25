@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/dm_banner_bom_re_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#0091ea"
+        android:minHeight="68dp" >
+
+        <ImageView
+            android:id="@+id/dm_banner_bom_img_icon"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/dm_icon_ball_one" />
+
+        <TextView
+            android:id="@+id/dm_banner_bom_txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/dm_banner_bom_img_icon"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/dm_banner_bom_img_con"
+            android:layout_toRightOf="@+id/dm_banner_bom_img_icon"
+            android:singleLine="true"
+            android:text="高德导航高德导航高德导航高德导航高德导航高德导航高德导航"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/dm_banner_bom_txt_ms"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignLeft="@+id/dm_banner_bom_txt_name"
+            android:layout_below="@+id/dm_banner_bom_txt_name"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_toLeftOf="@+id/dm_banner_bom_img_con"
+            android:singleLine="true"
+            android:text="为车主提供的安全、易用、高效的导航软件高德导航高德导航高德导航"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:id="@+id/dm_banner_bom_img_con"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.3dp" >
+
+            <ImageView
+                android:id="@+id/dm_banner_bom_img_go"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/dm_icon_bannerview_jiantou" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

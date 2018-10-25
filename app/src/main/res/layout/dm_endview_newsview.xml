@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/dm_endview_newsview_lin_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/dm_press_list_bai_havebk"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="12dp" >
+
+        <RelativeLayout
+            android:id="@+id/dm_endview_newsview_re_one"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" >
+
+            <TextView
+                android:id="@+id/dm_endview_newsview_tv_nums"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/dm_endview_newsview_tv_name"
+                android:layout_below="@+id/dm_endview_newsview_tv_name"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:singleLine="true"
+                android:text="7983人阅读"
+                android:textColor="#767676"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/dm_endview_newsview_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="聂隐娘拉片笔记：抢到抢到没有朋友的电影"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/dm_endview_newsview_lin_one"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="11dp" >
+
+            <ImageView
+                android:id="@+id/dm_endview_newsview_img_one"
+                android:layout_width="0dp"
+                android:layout_height="71.3dp"
+                android:layout_weight="1"
+                android:background="@drawable/dm_icon_ball_one"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/dm_endview_newsview_img_two"
+                android:layout_width="0dp"
+                android:layout_height="71.3dp"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/dm_icon_ball_one"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/dm_endview_newsview_img_three"
+                android:layout_width="0dp"
+                android:layout_height="71.3dp"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/dm_icon_ball_one"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

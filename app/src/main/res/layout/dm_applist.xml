@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/dm_applist_content"
+        android:layout_width="fill_parent"
+        android:layout_height="80.66dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/dm_press_list_bai_havebk" >
+
+        <TextView
+            android:id="@+id/dm_applist_txt_download"
+            android:layout_width="58.66dp"
+            android:layout_height="25.33dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/dm_press_button_applist"
+            android:gravity="center"
+            android:text="下载"
+            android:textColor="#ffffff"
+            android:textSize="12.66sp" />
+
+        <ImageView
+            android:id="@+id/dm_applist_img_icon"
+            android:layout_width="56.66dp"
+            android:layout_height="56.66dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/dm_icon_ball_one" />
+
+        <TextView
+            android:id="@+id/dm_applist_txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/dm_applist_txt_download"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/dm_applist_img_icon"
+            android:singleLine="true"
+            android:maxWidth="160dp"
+            android:text="未知"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/dm_applist_txt_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/dm_applist_txt_name"
+            android:layout_below="@+id/dm_applist_txt_name"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="3dp"
+            android:singleLine="true"
+            android:text="5484次下载 　　35.76M"
+            android:textColor="#999999"
+            android:textSize="11.3sp" />
+
+        <TextView
+            android:id="@+id/dm_applist_txt_ms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/dm_applist_txt_size"
+            android:layout_below="@+id/dm_applist_txt_size"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:singleLine="true"
+            android:text="为车主提供的安全、易用、高效的导航软件"
+            android:textColor="#666666"
+            android:textSize="11.3sp" />
+    </RelativeLayout>
+
+</LinearLayout>

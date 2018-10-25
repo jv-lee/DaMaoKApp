@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:chuck="http://schemas.android.com/apk/res-auto">
+
+    <data></data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="matrix" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/battery" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="15:02"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_time"
+                android:text="05/31"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_time"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_date"
+                android:text="星期四"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+
+            <com.yuan7.lockscreen.view.widget.UnlockView
+                android:id="@+id/custom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="50dp"
+                chuck:slideImageViewResId="@drawable/ic_arrow"
+                chuck:slideImageViewResIdAfter="@drawable/ic_lock_un"
+                chuck:slideImageViewWidth="50dp"
+                chuck:slideThreshold="0.5"
+                chuck:textColorResId="#ffffff"
+                chuck:textHint="滑动解锁"
+                chuck:textSize="6"
+                chuck:viewBackgroundResId="@drawable/shape_round_normal_green" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+</layout>

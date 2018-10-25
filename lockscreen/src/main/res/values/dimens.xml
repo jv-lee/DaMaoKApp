@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="nav_height">46dp</dimen>
+    <dimen name="nav_diy">56dp</dimen>
+
+    <dimen name="item_margin">3dp</dimen>
+    <dimen name="item_margin_center">5dp</dimen>
+
+    <dimen name="font_size_big">16sp</dimen>
+    <dimen name="font_size_center">14sp</dimen>
+    <dimen name="font_size_small">12sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

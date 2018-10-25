@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <com.lockstudio.sticklocker.view.HorizontalListView
+        android:id="@+id/wallpaper_diy_hs"
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+        android:padding="4dp"
+        android:background="@color/trans_75_black"
+        android:cacheColorHint="@android:color/transparent"
+        android:gravity="center_vertical"
+        android:listSelector="@drawable/black_mask_selector"
+        android:scrollbars="none" >
+    </com.lockstudio.sticklocker.view.HorizontalListView>
+
+
+    <LinearLayout
+        android:id="@+id/wallpaper_tab_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/trans_90_black"
+        android:gravity="center"
+        android:minHeight="@dimen/tab_min_height"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/choose_wallpaper_button1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tab_min_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/diy_wallpaper_tv_1"
+                android:text="@string/paper_hot"
+                style="@style/sticker_resource_tab_style" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="10dip"
+            android:layout_gravity="center_vertical"
+            android:background="@color/trans_white" />
+
+        <LinearLayout
+            android:id="@+id/choose_wallpaper_button4"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tab_min_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/diy_wallpaper_tv_4"
+                android:text="@string/paper_beutiful"
+                style="@style/sticker_resource_tab_style" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="10dip"
+            android:layout_gravity="center_vertical"
+            android:background="@color/trans_white" />
+
+        <LinearLayout
+            android:id="@+id/choose_wallpaper_button2"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tab_min_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/diy_wallpaper_tv_2"
+                android:text="@string/paper_2"
+                style="@style/sticker_resource_tab_style" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="10dip"
+            android:layout_gravity="center_vertical"
+            android:background="@color/trans_white" />
+
+        <LinearLayout
+            android:id="@+id/choose_wallpaper_button3"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tab_min_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/diy_wallpaper_tv_3"
+                android:text="@string/paper_famous"
+                style="@style/sticker_resource_tab_style" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="10dip"
+            android:layout_gravity="center_vertical"
+            android:background="@color/trans_white" />
+
+        <LinearLayout
+            android:id="@+id/choose_wallpaper_button5"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tab_min_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/diy_wallpaper_tv_5"
+                android:text="@string/paper_youth"
+                style="@style/sticker_resource_tab_style" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/dm_readlist_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/dm_press_list_bai_havebk"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/dm_readlist_001"
+            android:layout_width="fill_parent"
+            android:layout_height="59.33dp" >
+
+            <TextView
+                android:id="@+id/dm_readlist_txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="校园传奇高手校园传奇高手校园传奇高手校园传奇高手"
+                android:textColor="#333333"
+                android:textSize="18.66sp" />
+
+            <TextView
+                android:id="@+id/dm_readlist_txt_state"
+                android:layout_width="32dp"
+                android:layout_height="16dp"
+                android:layout_alignLeft="@+id/dm_readlist_txt_name"
+                android:layout_below="@+id/dm_readlist_txt_name"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/dm_press_button_readlist_state"
+                android:gravity="center"
+                android:text="下载"
+                android:textColor="#ffffff"
+                android:textSize="11.33sp" />
+
+            <TextView
+                android:id="@+id/dm_readlist_txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/dm_readlist_txt_state"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_toRightOf="@+id/dm_readlist_txt_state"
+                android:singleLine="true"
+                android:text="校园爱情类小说 · 32564人阅读"
+                android:textColor="#666666"
+                android:textSize="10.66sp" />
+
+            <TextView
+                android:id="@+id/dm_readlist_txt_read"
+                android:layout_width="71.33dp"
+                android:layout_height="25.33dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/dm_press_button_readlist_do"
+                android:gravity="center"
+                android:text="马上阅读"
+                android:textColor="#ffffff"
+                android:textSize="12.66sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/dm_readlist_002"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d4d4d4" />
+
+        <RelativeLayout
+            android:id="@+id/dm_readlist_003"
+            android:layout_width="fill_parent"
+            android:layout_height="111.33dp" >
+
+            <ImageView
+                android:id="@+id/dm_readlist_img_pic"
+                android:layout_width="68dp"
+                android:layout_height="92.66dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8.66dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/dm_icon_ball_one" />
+
+            <TextView
+                android:id="@+id/dm_readlist_txt_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/dm_readlist_img_pic"
+                android:ellipsize="end"
+                android:lines="5"
+                android:text="高德导航高德，高德导航高德导航高德导航"
+                android:textColor="#666666"
+                android:textSize="13.33sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

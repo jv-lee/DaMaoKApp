@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/shape_corner"
+    android:clickable="true"
+    android:minWidth="300dp"
+    android:orientation="vertical"
+    android:padding="10.0dip" >
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/myTimer_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:paddingBottom="6dip"
+            android:paddingLeft="6dip"
+            android:paddingTop="6dip"
+            android:text="计时器"
+            android:textSize="20dip"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/timer_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/corners_bg"
+            android:paddingBottom="10dip"
+            android:paddingLeft="10dip"
+            android:paddingTop="10dip"
+            android:text="我们相爱了" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="点我选择您要的日期"
+            android:textColor="#8d8d8d" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <Button
+                android:id="@+id/timer_year"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:background="@drawable/green"
+                android:padding="2dip"
+                android:text="2015"
+                android:textColor="#ffffff"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_marginTop="-6dip"
+                android:gravity="center"
+                android:padding="0.5dip"
+                android:text="-"
+                android:textSize="30dip"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/timer_mouth"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:background="@drawable/green"
+                android:padding="2dip"
+                android:text="06"
+                android:textColor="#ffffff"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_marginTop="-6dip"
+                android:gravity="center"
+                android:padding="0.5dip"
+                android:text="-"
+                android:textSize="30dip"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/timer_day"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:background="@drawable/green"
+                android:padding="2dip"
+                android:text="07"
+                android:textColor="#ffffff"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="点我选择您要的时间"
+            android:textColor="#8d8d8d" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <Button
+                android:id="@+id/timer_hour"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:background="@drawable/yellow"
+                android:padding="2dip"
+                android:text="09"
+                android:textColor="#ffffff"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_marginTop="-6dip"
+                android:gravity="center"
+                android:padding="4dip"
+                android:text=":"
+                android:textSize="30dip"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/timer_minutes"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:background="@drawable/yellow"
+                android:padding="2dip"
+                android:text="00"
+                android:textColor="#ffffff"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_marginTop="-6dip"
+                android:gravity="center"
+                android:padding="4dip"
+                android:text=":"
+                android:textSize="30dip"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/timer_am_pm"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:background="@drawable/yellow"
+                android:padding="2dip"
+                android:text="00"
+                android:textColor="#ffffff"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="5dip" >
+
+        <Button
+            android:id="@+id/timer_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_grey_selector"
+            android:padding="2dip"
+            android:text="@string/cancle"
+            android:textColor="#ffffff"
+            android:textSize="20dip" />
+
+        <Button
+            android:id="@+id/timer_sure"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/button_red_selector"
+            android:padding="2dip"
+            android:text="@string/complete"
+            android:textColor="#ffffff"
+            android:textSize="20dip" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:gravity="center" >
+
+    <TextView
+        android:id="@+id/resource_textview"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="进入\n相册"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:background="@drawable/white_bg"
+        android:visibility="gone" />
+
+
+
+    <LinearLayout
+        android:id="@+id/resource_layout"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/white_bg"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/resource_imageview"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/app_name"/>
+    </LinearLayout>
+
+</RelativeLayout>

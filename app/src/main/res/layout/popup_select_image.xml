@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_title_bar_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:paddingRight="10dip" >
+
+        <TextView
+            android:id="@+id/title_bar_left_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/icon_edit_banner_back"
+            android:drawablePadding="@dimen/padding_maintop"
+            android:gravity="center"
+            android:minWidth="@dimen/title_bar_height_min"
+            android:paddingLeft="@dimen/more_back"
+            android:paddingRight="@dimen/padding_maintop"
+            android:singleLine="true"
+            android:textColor="#606060"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/title_bar_right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="2dp"
+            android:gravity="center_vertical"
+            android:minWidth="@dimen/title_bar_height_min"
+            android:padding="6dip"
+            android:singleLine="true"
+            android:text="贴纸"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_bar_right_size" />
+
+        <ImageView
+            android:id="@+id/open_album_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="6dip"
+            android:src="@drawable/tab_paster_iconlocal_style" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+         >
+
+        <com.lockstudio.launcher.fancy.view.tabpageindicator.TabPageIndicator
+            android:id="@+id/indicator"
+            style="@style/Theme.PageIndicatorDefaults"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:paddingTop="1dip"/>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_seletImage"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#f8f8f8" />
+
+</LinearLayout>

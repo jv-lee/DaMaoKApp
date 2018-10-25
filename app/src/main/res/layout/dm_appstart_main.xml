@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dm_appstart_all_con"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/dm_appstart_main_img_remote"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:id="@+id/dm_appstart_main_jd_con"
+            android:layout_width="fill_parent"
+            android:layout_height="152dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <RelativeLayout
+                android:id="@+id/dm_appstart_lay_jd_left"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="3" >
+
+                <ImageView
+                    android:id="@+id/dm_appstart_lay_jd_left_img"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="15dp"
+                    android:scaleType="fitCenter" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dm_appstart_lay_jd_right_all"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2" >
+
+                <LinearLayout
+                    android:id="@+id/dm_appstart_lay_jd_right"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp" >
+
+                    <RelativeLayout
+                        android:id="@+id/dm_appstart_lay_jd_right_up"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/dm_appstart_lay_jd_right_up_text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:ellipsize="end"
+                            android:gravity="left|center_vertical"
+                            android:lines="2"
+                            android:text="网购上京东网购上京东京东网购上京东京东网购上京东"
+                            android:textColor="#ca1524"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/dm_appstart_lay_jd_right_down"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/dm_biankuang_closedialog_jd"
+                        android:padding="7dp" >
+
+                        <TextView
+                            android:id="@+id/dm_appstart_lay_jd_right_down_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:ellipsize="end"
+                            android:gravity="left|center_vertical"
+                            android:lines="2"
+                            android:paddingLeft="6dp"
+                            android:text="网购上京东网购上京东网购东网购上京东京购上京东网购上京东"
+                            android:textColor="#333"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/dm_closedialog_lay_jd_right_tui"
+                    android:layout_width="31dp"
+                    android:layout_height="11dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/dm_tui_guang_bg"
+                    android:gravity="center"
+                    android:text="推广"
+                    android:textColor="#c6c6c6"
+                    android:textSize="8sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/dm_appstart_lin_one"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/dm_appstart_main_img_local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dm_icon_ball_one" />
+    </LinearLayout>
+
+</LinearLayout>

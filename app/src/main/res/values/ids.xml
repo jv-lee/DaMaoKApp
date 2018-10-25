@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="bottom_layout" type="id"/>
+    <item name="diy_tab" type="id" />
+    <item name="tag_id" type="id" />
+    <item name="jazzy_key" type="id"/>
+</resources>

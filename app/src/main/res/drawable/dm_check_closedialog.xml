@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/dm_icon_close_check_ok" android:state_checked="true"></item>
+    <item android:drawable="@drawable/dm_icon_close_check_defult" android:state_focused="false"></item>
+    <item android:drawable="@drawable/dm_icon_close_check_defult"></item>
+
+</selector>

@@ -1,0 +1,36 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data></data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:id="@+id/hsv_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <ImageView
+                android:id="@+id/iv_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="matrix" />
+
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/btn_click"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape_image_btn"
+            android:text="@string/wallpaper_wall_set"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/font_size_center" />
+
+
+    </FrameLayout>
+</layout>

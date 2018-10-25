@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_allapplication"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/title_bar_backgroud"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="" />
+
+    <include layout="@layout/title_bar" />
+
+    <!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/title_bar_left_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/more_back"
+            android:drawablePadding="@dimen/padding_maintop"
+            android:gravity="center"
+            android:minWidth="@dimen/title_bar_height_min"
+            android:paddingLeft="@dimen/more_back"
+            android:paddingRight="@dimen/padding_maintop"
+            android:singleLine="true"
+            android:textColor="#606060"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/title_bar_right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="2dp"
+            android:gravity="center_vertical"
+            android:minWidth="@dimen/title_bar_height_min"
+            android:padding="15dip"
+            android:singleLine="true"
+            android:text="@string/title_add_app"
+            android:textColor="#606060"
+            android:textSize="@dimen/title_bar_right_size" />
+    </RelativeLayout>
+    -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal" >
+
+        <GridView
+            android:id="@+id/grid_child_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/view_bottom_line"
+            android:layout_centerHorizontal="true"
+            android:background="#f8f8f8"
+            android:cacheColorHint="@android:color/transparent"
+            android:horizontalSpacing="20dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="4"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:scrollbars="none"
+            android:verticalSpacing="0dp" />
+
+        <View
+            android:id="@+id/view_bottom_line"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_above="@+id/ll_include_btn"
+            android:background="@android:color/darker_gray" />
+
+        <!--
+             <Button
+            android:id="@+id/select_ok_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_margin="5dip"
+            android:background="@drawable/folder_selector"
+            android:paddingBottom="6dip"
+            android:paddingLeft="80dip"
+            android:paddingRight="80dip"
+            android:paddingTop="6dip"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+        -->
+
+        <LinearLayout
+            android:id="@+id/ll_include_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_ll_height"
+            android:layout_above="@+id/text_bottom"
+            android:background="@android:color/white"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/select_ok_btn"
+                android:layout_width="@dimen/bottom_btn_width"
+                android:layout_height="@dimen/bottom_btn_height"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_empty_blue_bg_select"
+                android:text="确定"
+                android:textColor="@color/color_btn_text_select"
+                android:textSize="@dimen/bottom_btn_empty_blue_textssize" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data></data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:id="@+id/rg_nav"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/nav_height"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_home"
+                style="@style/main_nav_button"
+                android:checked="true"
+                android:drawableTop="@drawable/selector_home"
+                android:text="@string/nav_home" />
+
+            <RadioButton
+                android:id="@+id/rb_landscape"
+                style="@style/main_nav_button"
+                android:drawableTop="@drawable/selector_landscape"
+                android:text="@string/nav_landscape" />
+
+            <RadioButton
+                android:id="@+id/rb_center"
+                style="@style/main_nav_button"
+                android:visibility="invisible" />
+
+            <RadioButton
+                android:id="@+id/rb_find"
+                style="@style/main_nav_button"
+                android:drawableTop="@drawable/selector_search"
+                android:text="@string/nav_find" />
+
+            <RadioButton
+                android:id="@+id/rb_my"
+                style="@style/main_nav_button"
+                android:drawableTop="@drawable/selector_my"
+                android:text="@string/nav_my" />
+        </RadioGroup>
+
+        <com.yuan7.lockscreen.view.widget.NoScrollViewPager
+            android:id="@+id/vp_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/rg_nav" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/rg_nav"
+            android:background="@drawable/tab_line"
+            android:scaleType="matrix" />
+
+        <ImageView
+            android:id="@+id/iv_diy"
+            android:layout_width="@dimen/nav_diy"
+            android:layout_height="@dimen/nav_diy"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:src="@drawable/selector_diy" />
+
+
+        <ImageView
+            android:id="@+id/iv_flow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rg_nav"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp" />
+
+    </RelativeLayout>
+
+</layout>

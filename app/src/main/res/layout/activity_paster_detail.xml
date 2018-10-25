@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_bar_backgroud" >
+
+    <include
+        android:id="@+id/title_bar_top"
+        layout="@layout/title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/paster_button_layout"
+        android:layout_below="@id/title_bar_top"
+        android:background="#f8f8f8"
+        android:scrollbars="none" >
+
+        <ImageView
+            android:id="@+id/paster_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart" />
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/paster_button_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bottom_ll_height"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+         >
+
+            <ProgressBar
+                android:id="@+id/download_progressbar_paster_item"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/bottom_btn_width"
+                android:layout_height="@dimen/bottom_btn_height"
+                android:layout_centerInParent="true"
+                android:progressDrawable="@drawable/progressbar_style_stick" />
+
+            <Button
+                android:id="@+id/download_btn_paster_item"
+                android:layout_width="@dimen/bottom_btn_width"
+                android:layout_height="@dimen/bottom_btn_height"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_empty_blue_bg_select"
+                android:text="下载"
+                android:textColor="@color/color_btn_text_select"
+                android:textSize="@dimen/bottom_btn_empty_blue_textssize" />
+    </RelativeLayout>
+
+</RelativeLayout>

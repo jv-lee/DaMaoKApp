@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_corner"
+    android:orientation="vertical"
+    android:paddingTop="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="true"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:text="@string/work_name"
+                android:textColor="#8d8d8d"
+                android:textSize="@dimen/more_button_font_size" />
+
+            <TextView
+                android:id="@+id/text_work_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:text="@string/work_author"
+                android:textColor="#8d8d8d"
+                android:textSize="@dimen/more_button_font_size" />
+
+            <TextView
+                android:id="@+id/text_work_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:text="@string/work_contact"
+                android:textColor="#8d8d8d"
+                android:textSize="@dimen/more_button_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/edit_text_name"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape_corner_gray"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_theme_name"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:selectAllOnFocus="true"
+                android:textColor="#505050"
+                android:textColorHint="#8e8e8e"
+                android:textSize="@dimen/more_button_font_size" />
+
+            <EditText
+                android:id="@+id/edit_text_author"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape_corner_gray"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_author_name"
+                android:selectAllOnFocus="true"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:textColor="#505050"
+                android:textColorHint="#8e8e8e"
+                android:textSize="@dimen/more_button_font_size" />
+
+            <EditText
+                android:id="@+id/edit_text_contact"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape_corner_gray"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_author_contact"
+                android:inputType="number"
+                android:selectAllOnFocus="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:textColor="#505050"
+                android:textColorHint="#8e8e8e"
+                android:textSize="@dimen/more_button_font_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tips_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/upload_tips_1"
+        android:textColor="#a3a3a3"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c9c9c9" />
+
+    <FrameLayout
+        android:id="@+id/upload"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button_bottom_white_selector" >
+
+        <TextView
+            android:id="@+id/button_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:singleLine="true"
+            android:text="@string/button_upload"
+            android:textColor="@color/red"
+            android:textSize="18sp" />
+    </FrameLayout>
+
+</LinearLayout>

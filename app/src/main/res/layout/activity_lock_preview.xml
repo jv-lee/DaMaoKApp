@@ -1,0 +1,203 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.lockstudio.sticklocker.view.PaperImageView
+        android:id="@+id/preview_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY" />
+
+    <View
+        android:id="@+id/diy_tmp"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+    <com.lockstudio.sticklocker.view.SpringImageButton
+        android:id="@+id/diy_delete_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diy_tmp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/diy_tmp"
+        android:layout_toStartOf="@+id/diy_tmp"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/diy_remove_selector"
+        android:visibility="gone" />
+    
+     <com.lockstudio.sticklocker.view.SpringImageButton
+        android:id="@+id/diy_info_image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diy_tmp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/diy_delete_image"
+        android:layout_toStartOf="@+id/diy_delete_image"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/diy_info_selector"
+        android:visibility="gone" />
+
+    <com.lockstudio.sticklocker.view.SpringImageButton
+        android:id="@+id/diy_like_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diy_tmp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/diy_delete_image"
+        android:layout_toStartOf="@+id/diy_delete_image"
+        android:background="@null"
+        android:src="@drawable/diy_like_selector"
+        android:visibility="invisible" />
+
+    <com.lockstudio.sticklocker.view.SpringImageButton
+        android:id="@+id/diy_info_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diy_tmp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/diy_like_image"
+        android:layout_toStartOf="@+id/diy_like_image"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/diy_info_selector"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/info_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diy_tmp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/diy_info_image"
+        android:layout_toStartOf="@+id/diy_info_image"
+        android:background="@drawable/info_bg"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/theme_name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/theme_author_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/info_layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diy_tmp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/diy_info_image1"
+        android:layout_toStartOf="@+id/diy_info_image1"
+        android:background="@drawable/info_bg"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/theme_name_textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/theme_author_textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/locker_preview_button_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/trans_90_white"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <ProgressBar
+            android:id="@+id/download_progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:progressDrawable="@drawable/progressbar_style"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/left_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="2dp"
+                    android:gravity="center"
+                    android:textColor="@color/diy_text_gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/center_imageview"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_round_red_selector"
+                android:scaleType="center" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/right_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="2dp"
+                    android:gravity="center"
+                    android:textColor="@color/diy_text_gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

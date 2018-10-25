@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#626262"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/plugin_edittext"
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_corner_gray"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:hint="@string/click_input_text"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColor="#505050"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_ok"
+            android:layout_width="60dp"
+            android:layout_height="34dp"
+            android:background="@drawable/button_green_selector"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="@android:string/ok"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:visibility="invisible"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:padding="7dip" >
+
+            <LinearLayout
+                android:id="@+id/word_group_1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/text_pop"
+                    style="@style/word_resource_tab_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/word_pop"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="10dip"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/trans_white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/word_group_2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/text_lyrics"
+                    style="@style/word_resource_tab_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/word_lyrics"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="10dip"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/trans_white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/word_group_3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/text_love"
+                    style="@style/word_resource_tab_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/word_love"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="10dip"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/trans_white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/word_group_4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/text_inspirational"
+                    style="@style/word_resource_tab_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/word_inspirational"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="10dip"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/trans_white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/word_group_5"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/text_poetry"
+                    style="@style/word_resource_tab_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/word_poetry"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vPager"
+            android:layout_width="wrap_content"
+            android:layout_height="200dip"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.0"
+            android:background="#000000"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" />
+    </LinearLayout>
+
+</LinearLayout>

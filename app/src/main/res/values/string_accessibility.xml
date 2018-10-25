@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="a_install">INSTALL</string>
+    <string name="a_uninstall">UNINSTALL</string>
+    <string name="a_next">NEXT</string>
+    <string name="a_force_stop">FORCE STOP</string>
+    <string name="a_force_stop1">FORCE STOP</string>
+    <string name="a_open">OPEN</string>
+    <string name="a_done">DONE</string>
+    <string name="a_ok">OK</string>
+    <string name="a_cancel">CANCEL</string>
+</resources>

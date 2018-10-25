@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_layout"
+    android:background="@color/main_title_bar_color"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_title_bar_color"
+        android:minHeight="@dimen/main_title_bar_min_height" >
+        <TextView
+            android:id="@+id/text_view_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/icon_edit_banner_back"
+            android:drawableStart="@drawable/icon_edit_banner_back"/>
+        <TextView
+            android:id="@+id/text_view_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+    </FrameLayout>
+
+
+    <com.lockstudio.sticklocker.view.HeaderAndFooterGridview
+        android:horizontalSpacing="3dp"
+        android:verticalSpacing="0dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:background="@color/white"
+        android:numColumns="3"
+        android:id="@+id/wallpaper_detail_gridview"
+        android:layout_width="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" >
+    </com.lockstudio.sticklocker.view.HeaderAndFooterGridview>
+
+</LinearLayout>

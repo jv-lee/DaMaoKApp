@@ -1,0 +1,226 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+android {
+    compileSdkVersion compile
+
+    defaultConfig {
+        applicationId "com.yuan7.lockscreen"
+        minSdkVersion min
+        targetSdkVersion target
+        versionCode vcode
+        versionName vname
+        flavorDimensions "1"
+
+        multiDexEnabled true
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["room.schemaLocation": "$projectDir/schemas".toString()]
+            }
+        }
+    }
+
+//    dexOptions {
+//        incremental true
+//        javaMaxHeapSize "4g"
+//        preDexLibraries = true
+//    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    kapt {
+        generateStubs = true
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+    sourceSets {
+        androidTest.assets.srcDirs += files("$projectDir/schemas".toString())
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+    productFlavors {
+
+        common {
+            resValue("string", "application_name", "文字锁屏")
+            applicationId "cn.opda.android.activity"
+            versionCode 5570000
+            versionName "5.5.7"
+            buildConfigField("Integer", "GAME_ENABLE_ID", "299")
+            buildConfigField("Integer", "GAME_ENABLE_ID_YQ", "311")
+
+            //GDT广告
+            buildConfigField("String", "gdt_appid", "\"1106741023\"")
+            buildConfigField("String", "gdt_splan", "\"7000034408008845\"")
+            buildConfigField("String", "gdt_screen", "\"7070030408801826\"")
+            buildConfigField("String", "gdt_banner", "\"7010532428609819\"")
+            buildConfigField("String", "gdt_android", "\"5010237438214205\"")
+
+            buildConfigField("String", "gdt_appid_yq", "\"1106906333\"")
+            buildConfigField("String", "gdt_banner_yq", "\"9030934572591619\"")
+            buildConfigField("String", "gdt_android_yq", "\"8020534512497720\"")
+
+            //umeng
+            buildConfigField("String", "umeng_key", "\"5af0066af29d987e9300022b\"")
+            buildConfigField("String", "umeng_channl", "\"common\"")
+        }
+
+        huawei {
+            resValue("string", "application_name", "文字锁屏")
+            applicationId "cn.opda.android.activity"
+            versionCode 557
+            versionName "5.5.7"
+            buildConfigField("Integer", "GAME_ENABLE_ID", "300")
+            buildConfigField("Integer", "GAME_ENABLE_ID_YQ", "312")
+
+            //GDT广告
+            buildConfigField("String", "gdt_appid", "\"1106741023\"")
+            buildConfigField("String", "gdt_splan", "\"7000034408008845\"")
+            buildConfigField("String", "gdt_screen", "\"7070030408801826\"")
+            buildConfigField("String", "gdt_banner", "\"7010532428609819\"")
+            buildConfigField("String", "gdt_android", "\"5010237438214205\"")
+
+            buildConfigField("String", "gdt_appid_yq", "\"1106906333\"")
+            buildConfigField("String", "gdt_banner_yq", "\"9030934572591619\"")
+            buildConfigField("String", "gdt_android_yq", "\"8020534512497720\"")
+
+            //umeng
+            buildConfigField("String", "umeng_key", "\"5af0066af29d987e9300022b\"")
+            buildConfigField("String", "umeng_channl", "\"huawei\"")
+        }
+
+        vivo {
+            resValue("string", "application_name", "文字锁屏")
+            applicationId "cn.opda.android.activity"
+            versionCode 557
+            versionName "5.5.7"
+            buildConfigField("Integer", "GAME_ENABLE_ID", "301")
+            buildConfigField("Integer", "GAME_ENABLE_ID_YQ", "313")
+
+            //GDT广告
+            buildConfigField("String", "gdt_appid", "\"1106741023\"")
+            buildConfigField("String", "gdt_splan", "\"7000034408008845\"")
+            buildConfigField("String", "gdt_screen", "\"7070030408801826\"")
+            buildConfigField("String", "gdt_banner", "\"7010532428609819\"")
+            buildConfigField("String", "gdt_android", "\"5010237438214205\"")
+
+            buildConfigField("String", "gdt_appid_yq", "\"1106906333\"")
+            buildConfigField("String", "gdt_banner_yq", "\"9030934572591619\"")
+            buildConfigField("String", "gdt_android_yq", "\"8020534512497720\"")
+
+            //umeng
+            buildConfigField("String", "umeng_key", "\"5af0066af29d987e9300022b\"")
+            buildConfigField("String", "umeng_channl", "\"vivo\"")
+        }
+
+        xiaomi {
+            resValue("string", "application_name", "文字锁屏")
+            applicationId "cn.opda.android.activity"
+            versionCode 557
+            versionName "5.5.7"
+            buildConfigField("Integer", "GAME_ENABLE_ID", "302")
+            buildConfigField("Integer", "GAME_ENABLE_ID_YQ", "314")
+
+            //GDT广告
+            buildConfigField("String", "gdt_appid", "\"1106741023\"")
+            buildConfigField("String", "gdt_splan", "\"7000034408008845\"")
+            buildConfigField("String", "gdt_screen", "\"7070030408801826\"")
+            buildConfigField("String", "gdt_banner", "\"7010532428609819\"")
+            buildConfigField("String", "gdt_android", "\"5010237438214205\"")
+
+            buildConfigField("String", "gdt_appid_yq", "\"1106906333\"")
+            buildConfigField("String", "gdt_banner_yq", "\"9030934572591619\"")
+            buildConfigField("String", "gdt_android_yq", "\"8020534512497720\"")
+
+            //umeng
+            buildConfigField("String", "umeng_key", "\"5af0066af29d987e9300022b\"")
+            buildConfigField("String", "umeng_channl", "\"xiaomi\"")
+        }
+    }
+}
+
+afterEvaluate {
+    tasks.matching {
+        it.name.startsWith('dex')
+    }.each { dx ->
+        if (dx.additionalParameters == null) {
+            dx.additionalParameters = ['--multi-dex']
+        } else {
+            dx.additionalParameters += '--multi-dex'
+        }
+    }
+}
+
+dependencies {
+    compileOnly fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    kapt "com.android.databinding:compiler:$binding_version"
+
+    //    implementation "com.android.support:appcompat-v7:$support_version"
+    implementation "com.android.support:cardview-v7:$support_version"
+    implementation "com.android.support:recyclerview-v7:$support_version"
+    implementation "com.android.support:design:$support_version"
+    implementation "com.android.support:support-v4:$support_version"
+    implementation "com.android.support.constraint:constraint-layout:$constraint_version"
+    implementation "android.arch.lifecycle:runtime:$arch_version"
+    implementation "android.arch.lifecycle:extensions:$arch_version"
+    kapt "android.arch.lifecycle:compiler:$arch_version"
+    implementation "android.arch.persistence.room:runtime:$arch_version"
+    implementation "android.arch.persistence.room:rxjava2:$arch_version"
+    kapt "android.arch.persistence.room:compiler:$arch_version"
+
+    //For testing Room migrations, add:
+
+    //    testCompile "android.arch.persistence.room:testing:$arch_version"
+    implementation "com.google.dagger:dagger:$dagger_version"
+    implementation "com.google.dagger:dagger-android:$dagger_version"
+    implementation "com.google.dagger:dagger-android-support:$dagger_version"
+    kapt "com.google.dagger:dagger-android-processor:$dagger_version"
+    kapt "com.google.dagger:dagger-compiler:$dagger_version"
+    implementation "com.google.code.gson:gson:$gson_version"
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation("com.squareup.retrofit2:converter-gson:$retrofit_version") {
+        exclude group: "com.google.code.gson"
+    }
+
+    //rxJava
+    implementation "io.reactivex.rxjava2:rxjava:$rxjava_version"
+    implementation "io.reactivex.rxjava2:rxandroid:$rxandroid_version"
+    implementation "com.github.CymChad:BaseRecyclerViewAdapterHelper:$baseadapter_version"
+
+    //友盟
+    implementation "com.umeng.sdk:common:$umengcommon_version"
+    implementation "com.umeng.sdk:analytics:$umenganalytics_version"
+    implementation 'com.github.florent37:viewanimator:1.0.0@aar'
+    implementation 'com.hyman:flowlayout-lib:1.1.2'
+    implementation files('libs/GDTUnionSDK.4.13.556.min.jar')
+    implementation files('libs/libapple.jar')
+    implementation 'com.android.support:multidex:1.0.2'
+    implementation project(':app')
+}
+repositories {
+    mavenCentral()
+}

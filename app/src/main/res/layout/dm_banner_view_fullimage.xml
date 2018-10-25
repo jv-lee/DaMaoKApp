@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/dm_banner_bom_fullimg_con"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dm_banner_bom_fullimg_con_tui"
+        android:layout_width="31dp"
+        android:layout_height="11dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/dm_tui_guang_bg"
+        android:gravity="center"
+        android:text="推广"
+        android:textColor="#c6c6c6"
+        android:textSize="8sp" />
+
+</RelativeLayout>

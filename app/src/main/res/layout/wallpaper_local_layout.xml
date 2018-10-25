@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/local_wallpaper_gridview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:cacheColorHint="@android:color/transparent"
+    android:gravity="center"
+    android:horizontalSpacing="6dp"
+    android:listSelector="@android:color/transparent"
+    android:numColumns="3"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:scrollbars="none"
+    android:scaleType="fitXY" />

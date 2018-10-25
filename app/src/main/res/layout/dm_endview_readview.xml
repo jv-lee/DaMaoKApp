@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/dm_endview_readview_lin_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/dm_press_list_bai_havebk"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/dm_endview_readview_re_one"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="13dp" >
+
+            <TextView
+                android:id="@+id/dm_endview_readview_tv_download"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/dm_press_button_applist"
+                android:gravity="center"
+                android:text="马上阅读"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dm_endview_readview_tv_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/dm_endview_readview_tv_name"
+                android:layout_below="@+id/dm_endview_readview_tv_name"
+                android:layout_marginRight="10dp"
+                android:singleLine="true"
+                android:text="奇幻玄幻类小说-6793人阅读"
+                android:textColor="#767676"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/dm_endview_readview_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:singleLine="true"
+                android:text="异世列美"
+                android:textColor="#4a4a4a"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/dm_endview_readview_lin_two"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="16.6dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/dm_endview_readview_img_icon"
+                android:layout_width="70.5dp"
+                android:layout_height="96.6dp"
+                android:background="@drawable/dm_icon_ball_one"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/dm_endview_readview_tv_ms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:maxHeight="96.6dp"
+                android:maxLines="6"
+                android:text="明晚的（爸爸去哪）是在电影《那山那人那狗》的拍摄地录制的，这片子98年拍的，哥的第一部戏，讲的是父与子之间很难言说的微妙关系。当年拍的时候没太多感觉，17年过去，当年的儿子已为人父，带孩子故地重游，感慨颇多，只是哥的容颜没怎么变化，电影里跟在身后的狗狗换成了儿砸。"
+                android:textColor="#767676"
+                android:textSize="12.6sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <com.jess.ui.TwoWayGridView
+        android:id="@+id/gv_shape"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="2dp"
+        android:scrollbars="none"
+        app:cacheColorHint="@android:color/transparent"
+        app:gravity="center"
+        app:twoway_horizontalSpacing="2dp"
+        app:listSelector="@android:color/transparent"
+        app:numColumns="auto_fit"
+        app:numRows="1"
+        app:scrollDirectionLandscape="horizontal"
+        app:scrollDirectionPortrait="horizontal"
+        app:twoway_verticalSpacing="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <SeekBar
+            android:id="@+id/shape_scale_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:max="100"
+            android:maxHeight="8dp"
+            android:minHeight="8dp"
+            android:paddingLeft="6dip"
+            android:paddingRight="6dip"
+            android:progress="10"
+            android:progressDrawable="@drawable/plugin_size_progress_bg"
+            android:thumb="@drawable/sb_thumb"
+            android:thumbOffset="6dip" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/plugin_size_low"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/plugin_size_high"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

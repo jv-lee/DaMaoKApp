@@ -1,0 +1,209 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/main_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_title_bar_color"
+        android:minHeight="@dimen/main_title_bar_min_height"
+        android:orientation="vertical" >
+
+        <!--
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1.0"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:background="@drawable/title_featured"
+            android:contentDescription="@string/app_name"/>
+        -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_title_bar_min_height"
+            android:gravity="center"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:text="首页"
+            android:textColor="@color/white"
+            android:textSize="21sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:layout_weight="1.0"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="0dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <LinearLayout
+                android:id="@+id/layout_tab_better"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tab_better"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="精选"
+                    android:textColor="@color/main_paixu_bar_text_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_tab_hot"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tab_hot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="热门"
+                    android:textColor="@color/main_paixu_bar_text_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_tab_new"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tab_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="新鲜"
+                    android:textColor="@color/main_paixu_bar_text_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <!--
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <View
+                    android:id="@+id/tab_better_indicator"
+                    android:layout_width="50dp"
+                    android:layout_height="1dp"
+                    android:gravity="center"
+                    android:background="@color/red"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <View
+                    android:id="@+id/tab_hot_indicator"
+                    android:layout_width="50dp"
+                    android:layout_height="1dp"
+                    android:gravity="center"
+                    android:background="@color/red"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                 <View
+                    android:id="@+id/tab_new_indicator"
+                    android:layout_width="50dp"
+                    android:layout_height="1dp"
+                    android:gravity="center"
+                    android:background="@color/red"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+            -->
+
+            <ImageView
+                android:id="@+id/cursor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="matrix"
+                android:src="@drawable/indicator_blue_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_paixu_bar"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_weight="1.0"
+            android:background="@color/main_paixu_bar_color"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="0dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tab_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="时间排名"
+                android:textColor="@color/red"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tab_praise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="点赞排名"
+                android:textColor="@color/main_paixu_bar_text_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.lockstudio.sticklocker.view.NoScrollViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/main_background_color"
+        android:flipInterval="30"
+        android:paddingLeft="2dip"
+        android:paddingRight="2dip"
+        android:persistentDrawingCache="none" />
+
+</LinearLayout>

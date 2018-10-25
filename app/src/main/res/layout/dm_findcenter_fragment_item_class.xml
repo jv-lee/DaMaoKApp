@@ -1,0 +1,192 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+         android:id="@+id/dm_findcenter_item_lin_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/dm_press_list_bai_havebk"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/dm_findcenter_lin_shop"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:gravity="center" >
+
+            <ImageView
+                  android:id="@+id/dm_findcenter_img_classicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14.9dp"
+                android:src="@drawable/dm_icon_find_shop" />
+
+            <TextView
+                android:id="@+id/dm_findcenter_tv_classname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="@string/dm_shopcenter_title"
+                android:textColor="#1c1c1c"
+                android:textSize="15.3sp" />
+
+            <TextView
+                android:id="@+id/dm_find_shop_tv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/dm_bg_find_nums"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#ffffff"
+                android:textSize="8sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:text="更多"
+                android:textColor="#4a4a4a"
+                android:textSize="11.3sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/dm_icon_find_more" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dm_find_shop_tv_line_one"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#eeeeee"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/dm_find_shop_re_one"
+            android:layout_width="fill_parent"
+            android:layout_height="67.3dp"
+            android:layout_margin="1px"
+            android:background="@drawable/dm_press_list_bai"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/dm_find_shop_img_icon_one"
+                android:layout_width="46.6dp"
+                android:layout_height="46.6dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="19.6dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/dm_icon_ball_one" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11.6dp"
+                android:layout_marginTop="10.5dp"
+                android:layout_toRightOf="@+id/dm_find_shop_img_icon_one"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/dm_find_shop_tv_name_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="高德导航"
+                    android:textColor="#4a4a4a"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/dm_find_shop_tv_size_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2.3dp"
+                    android:text="工具·9.8MB"
+                    android:textColor="#9e9e9e"
+                    android:textSize="8.6sp" />
+
+                <TextView
+                    android:id="@+id/dm_find_shop_tv_ms_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30.5dp"
+                    android:layout_marginTop="2.3dp"
+                    android:singleLine="true"
+                    android:text="为车主提供的安全、易用、高效的导航软件"
+                    android:textColor="#7f7f7f"
+                    android:textSize="10.6sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/dm_find_shop_tv_line_two"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#eeeeee"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/dm_find_shop_re_two"
+            android:layout_width="fill_parent"
+            android:layout_height="67.3dp"
+            android:layout_margin="1px"
+            android:background="@drawable/dm_press_list_bai"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/dm_find_shop_img_icon_two"
+                android:layout_width="46.6dp"
+                android:layout_height="46.6dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="19.6dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/dm_icon_ball_one" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11.6dp"
+                android:layout_marginTop="10.5dp"
+                android:layout_toRightOf="@+id/dm_find_shop_img_icon_two"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/dm_find_shop_tv_name_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="高德导航"
+                    android:textColor="#4a4a4a"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/dm_find_shop_tv_size_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2.3dp"
+                    android:text="工具·9.8MB"
+                    android:textColor="#9e9e9e"
+                    android:textSize="8.6sp" />
+
+                <TextView
+                    android:id="@+id/dm_find_shop_tv_ms_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30.5dp"
+                    android:layout_marginTop="2.3dp"
+                    android:singleLine="true"
+                    android:text="为车主提供的安全、易用、高效的导航软件"
+                    android:textColor="#7f7f7f"
+                    android:textSize="10.6sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

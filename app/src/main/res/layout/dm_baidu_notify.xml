@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/dm_baidu_notify_big_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/dm_icon_shoritcut_game" />
+
+        <TextView
+            android:id="@+id/dm_baidu_notify_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/dm_baidu_notify_small_icon"
+            android:layout_toRightOf="@+id/dm_baidu_notify_big_icon"
+            android:singleLine="true"
+            android:text="TextViiewTextViewTextViiewTextViewTextViiewTextViewTextViiewTextView"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/dm_baidu_notify_small_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/dm_baidu_logo" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="dm_gamecenter_title">精品游戏</string>
+    <string name="dm_appcenter_title">精选应用</string>
+    <string name="dm_readcenter_title">小说中心</string>
+    <string name="dm_shopcenter_title">乐惠购物</string>
+    <string name="dm_findcenter_title">发现精彩</string>
+
+</resources>

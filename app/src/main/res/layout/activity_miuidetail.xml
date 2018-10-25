@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_miuidetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000"
+        android:orientation="vertical"
+         >
+    <TextView
+        android:id="@+id/activity_miuidetail_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
+        android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_plugin_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000"
+        android:orientation="vertical"
+        android:visibility="gone" >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/plugin_message_prompt1" />
+        <ImageView
+            android:id="@+id/activity_plugin_message_know"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="120dp"
+            android:src="@drawable/plugin_message_prompt2" />
+    </RelativeLayout>
+    
+    <ImageView
+        android:id="@+id/activity_miuidetail_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/diy_guide_new"
+        android:scaleType="fitXY"
+        android:visibility="gone"/>
+    
+    <RelativeLayout
+        android:id="@+id/activity_guide_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@null"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_guide_main" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_guide_theme"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+       <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_guide_newtheme" />
+         
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/activity_guide_diy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+       <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/diy_guide_new" />
+         
+    </RelativeLayout>
+    
+
+</RelativeLayout>

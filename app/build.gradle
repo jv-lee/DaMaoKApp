@@ -1,0 +1,27 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion compile
+    defaultConfig {
+
+        minSdkVersion min
+        targetSdkVersion target
+        versionCode vcode
+        versionName vname
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets { main { assets.srcDirs = ['src/main/assets', 'src/main/assets/'] } }
+
+    useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    compileOnly fileTree(include: ['*.jar'], dir: 'libs')
+    api "com.android.support:appcompat-v7:$support_version"
+    api files('libs/nineoldandroids-2.4.0.jar')
+}

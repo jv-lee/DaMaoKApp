@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_title_bar_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/setting_text_gray_author"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/main_title_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_title_bar_color"
+            android:gravity="center"
+            android:minHeight="@dimen/main_title_bar_min_height"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/author_view_back"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/icon_edit_banner_back"
+                android:drawableStart="@drawable/icon_edit_banner_back"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/author_view_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="个人信息"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/author_view_add"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="添加"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="作者:"
+                    android:layout_gravity="left|center"
+                    android:textColor="@color/edit_buttom_author_bg"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/author_edit_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:maxLength="13"
+                    android:gravity="center"
+                    android:background="@null"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:id="@+id/author_edit_name_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_gravity="left|center"
+                    android:src="@drawable/icon_author_delect"
+                    android:visibility="invisible" />
+            </TableRow>
+
+           <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/setting_line_gray" 
+                />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="联系方式:"
+                    android:layout_gravity="left|center"
+                    android:textColor="@color/edit_buttom_author_bg"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/author_edit_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="13"
+                    android:background="@null"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:id="@+id/author_edit_phone_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_gravity="left|center"
+                    android:src="@drawable/icon_author_delect"
+                    android:visibility="invisible" />
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/author_button_sure"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_red_corner_360_selector"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="以上信息将作为上传锁屏的凭证，如有疑问请联系文字锁屏工作人员"
+                android:textColor="@color/gray"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:paddingTop="15dp"
+                android:text="联系方式\nQQ   1950123306"
+                android:textColor="@color/gray"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

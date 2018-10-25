@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/umeng_fb_conversation_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_title_bar_color"
+        android:gravity="center"
+        android:minHeight="@dimen/main_title_bar_min_height"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/title_feedback"
+            android:contentDescription="@string/app_name"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/umeng_fb_send_layout"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" />
+
+    <com.umeng.fb.widget.InterceptTouchSwipeRefreshLayout
+        android:id="@+id/umeng_fb_swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/umeng_fb_send_layout"
+        android:layout_below="@id/umeng_fb_conversation_header" >
+
+        <ListView
+            android:id="@+id/umeng_fb_reply_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:divider="@null"
+            android:listSelector="#00000000"
+            android:transcriptMode="alwaysScroll" >
+        </ListView>
+    </com.umeng.fb.widget.InterceptTouchSwipeRefreshLayout>
+
+</RelativeLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="onClick"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="entity"
+            type="com.yuan7.lockscreen.model.entity.LabelDB" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/nav_height"
+            android:background="@color/toolbar_color">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                onClick="@{onClick}"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/ic_back" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#EAEAEA" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/nav_height"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:background="#E7E6EE">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/loading_bg" />
+
+                <ImageView
+                    android:id="@+id/iv_pic"
+                    imgUrl="@{entity.focusImgUrl}"
+                    onClick="@{onClick}"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+            </FrameLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1" />
+
+            <FrameLayout
+                android:id="@+id/fl_ad"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.1"
+                android:background="@color/toolbar_color"></FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/toolbar_line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.9"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_share"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    onClick="@{onClick}"
+                    android:src="@drawable/local_share" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical">
+
+                    <Button
+                        android:id="@+id/btn_set_wallpaper"
+                        onClick="@{onClick}"
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="4"
+                        android:background="@drawable/shape_btn"
+                        android:text="@string/wallpaper_wall_set"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/btn_set_lock"
+                        onClick="@{onClick}"
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="4"
+                        android:background="@drawable/shape_btn"
+                        android:text="@string/wallpaper_lock_set"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_delete"
+                    onClick="@{onClick}"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_weight="2"
+                    android:padding="8dp"
+                    android:src="@drawable/delete_topbar" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/dm_banner_bom_re_top"
+        android:layout_width="fill_parent"
+        android:layout_height="12dp"
+        android:paddingBottom="2dp" >
+
+        <TextView
+            android:id="@+id/dm_banner_bom_fullimg_con_tui"
+            android:layout_width="28dp"
+            android:layout_height="fill_parent"
+            android:background="#c6c6c6"
+            android:gravity="center"
+            android:text="推广"
+            android:textColor="#494949"
+            android:textSize="7sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/dm_icon_banner_ckxq" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            android:id="@+id/dm_banner_bom_re_main"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:id="@+id/dm_banner_bom_img_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="9dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/dm_icon_ball_one" />
+
+            <TextView
+                android:id="@+id/dm_banner_bom_txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/dm_banner_bom_img_icon"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/dm_banner_bom_txt_go"
+                android:layout_toRightOf="@+id/dm_banner_bom_img_icon"
+                android:singleLine="true"
+                android:text="高德导航高德导航高德导航高德导航高德导航高德导航高德导航"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/dm_banner_bom_txt_ms"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignLeft="@+id/dm_banner_bom_txt_name"
+                android:layout_below="@+id/dm_banner_bom_txt_name"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_toLeftOf="@+id/dm_banner_bom_txt_go"
+                android:singleLine="true"
+                android:text="为车主提供的安全、易用、高效的导航软件高德导航高德导航高德导航"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/dm_banner_bom_txt_go"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="false"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="28dp"
+                android:background="@drawable/dm_press_button_qing"
+                android:gravity="center"
+                android:text="下载"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/dm_banner_bom_img_bar"
+            android:layout_width="fill_parent"
+            android:scaleType="fitXY"
+            android:layout_height="fill_parent" />
+
+        <ImageView
+            android:id="@+id/dm_banner_bom_img_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/dm_close_002" />
+
+        <TextView
+            android:id="@+id/dm_banner_bom_time"
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="3dp"
+            android:background="#e5e5e5"
+            android:gravity="center"
+            android:text="10s"
+            android:textColor="#b6b6b6"
+            android:textSize="7sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

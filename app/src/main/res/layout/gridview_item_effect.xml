@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="80dp" >
+
+    <ImageView
+        android:id="@+id/effect_imageview"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/effect_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/trans_35_black"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="11sp" />
+
+    <ImageView
+        android:id="@+id/select_imageview"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/trans_35_black"
+        android:scaleType="fitXY" />
+
+</RelativeLayout>

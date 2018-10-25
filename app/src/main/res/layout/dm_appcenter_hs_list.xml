@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/dm_appcenter_hs_list_lin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/dm_appcenter_hs_list_lin_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/dm_appcenter_hs_list_img_icon"
+                android:layout_width="52.66dp"
+                android:layout_height="52.66dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/dm_icon_ball_one" />
+
+            <TextView
+                android:id="@+id/dm_appcenter_hs_list_tv_jh"
+                android:layout_width="12.88dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dm_appcenter_hs_list_txt_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:text="全球反恐"
+            android:textSize="10.55sp" />
+    </LinearLayout>
+
+</LinearLayout>

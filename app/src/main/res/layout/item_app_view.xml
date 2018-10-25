@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     >
+	<View
+	    android:id="@+id/view_item_top"
+	    android:layout_height="20dp"
+	    android:layout_width="match_parent"
+	    />
+    <com.lockstudio.sticklocker.view.FullWidthImageView
+        android:id="@+id/all_imageview"
+        android:padding="8dip"
+        android:layout_below="@id/view_item_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
+
+    <TextView
+        android:id="@+id/theme_text_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/all_imageview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:textColor="#666666" />
+
+    <ImageView
+        android:id="@+id/app_badger"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignRight="@id/all_imageview"
+        android:layout_alignTop="@id/all_imageview"
+        android:adjustViewBounds="true"
+        android:clickable="false"
+        android:contentDescription="@color/transparent"
+        android:focusable="false"
+        android:src="@drawable/app_badger"
+        android:visibility="gone" />
+
+</RelativeLayout>

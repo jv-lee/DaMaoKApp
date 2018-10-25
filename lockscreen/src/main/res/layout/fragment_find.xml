@@ -1,0 +1,160 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="IsBack"
+            type="boolean" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/nav_height"
+            android:background="@color/toolbar_color">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                visibleGone="@{IsBack}"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/ic_back" />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/iv_search"
+                android:layout_toRightOf="@+id/iv_back"
+                android:background="@drawable/shape_search"
+                android:ellipsize="end"
+                android:hint="@string/search_hint"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textCursorDrawable="@drawable/shape_search_cursor"
+                android:textSize="@dimen/font_size_center" />
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/ic_search" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/toolbar_line_color" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/nav_height"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/search_hot"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/font_size_big" />
+
+                <TextView
+                    android:id="@+id/tv_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:drawableLeft="@drawable/ic_change_search_words"
+                    android:drawablePadding="5dp"
+                    android:text="@string/search_change"
+                    android:textSize="@dimen/font_size_center" />
+
+            </RelativeLayout>
+
+            <com.zhy.view.flowlayout.TagFlowLayout
+                android:id="@+id/flow_tag"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@+id/tv_change"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="3.5"
+                android:background="@drawable/shape_change"
+                android:padding="20dp"
+                app:max_select="-1" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/search_record"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/font_size_big" />
+
+                <TextView
+                    android:id="@+id/tv_change2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:drawableLeft="@drawable/ic_delete_search"
+                    android:drawablePadding="5dp"
+                    android:text="@string/search_delete"
+                    android:textSize="@dimen/font_size_center" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@+id/tv_change"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="3.5"
+                android:background="@drawable/shape_change"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+</layout>

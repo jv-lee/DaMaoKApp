@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sticker Lock</string>
+    <string name="main_tab_featured">Featured</string>
+    <string name="main_tab_diy">DIY</string>
+    <string name="main_tab_wallpaper">Wallpaper</string>
+    <string name="main_tab_competition">Competition</string>
+    <string name="main_tab_play">Play</string>
+    <string name="main_tab_more">More</string>
+    <string name="plugin_tab_font">Font</string>
+    <string name="plugin_tab_size">Size</string>
+    <string name="plugin_tab_color">Color</string>
+    <string name="plugin_tab_light">Light</string>
+    <string name="plugin_tab_content">Content</string>
+    <string name="plugin_tab_offset">Offset</string>
+    <string name="plugin_tab_shape">Shape</string>
+    <string name="diy_tab_wallpaper">壁纸</string>
+    <string name="diy_tab_word">文字</string>
+    <string name="diy_tab_plugin">插件</string>
+    <string name="diy_tab_sticker">贴纸</string>
+    <string name="diy_tab_locker">解锁</string>
+    <string name="exit_tip">Tap again to exit.</string>
+    <string name="copied_tip">Copied.</string>
+    <string name="setting">Setting</string>
+    <string name="about">About</string>
+    <string name="feedback">Feedback</string>
+    <string name="help">FAQ</string>
+    <string name="copyright_message">Copyright © 2015 Lock Studio. \nAll rights reserved.</string>
+    <string name="setting_lock_sound">Lock Sound</string>
+    <string name="setting_unlock_sound">Unlock Sound</string>
+    <string name="setting_unlock_vibrate">Vibrate</string>
+    <string name="setting_unlock_statusbar">显示状态栏</string>
+    <string name="start_locksreen">启用文字锁屏</string>
+    <string name="get_push">每日自动更换锁屏壁纸</string>
+    <string name="allow_push_wifi">允许数据流量下更新</string>
+    <string name="initialize">初始设置</string>
+    <string name="other">其他</string>
+    <string name="share_lockscreen">分享给好友</string>
+    <string name="give_good_comment">给我们好评</string>
+    <string name="clear">Clean Cache</string>
+    <string name="clear_done">Clear done.</string>
+    <string name="about_our">关于我们</string>
+    <string name="question">常见问题\t(客服QQ：2011158286)</string>
+    <string name="good_comment">好评</string>
+    <string name="discuss">帮助我们改进</string>
+    <string name="calendar">壁纸日历</string>
+    <string name="question_text">常见问题</string>
+    <string name="checkupdate">检查更新</string>
+    <string name="common_problem">常见问题</string>
+    <string name="share_fail">分享失败</string>
+    <string name="share_cancle">分享取消</string>
+    <string name="cancle">取消</string>
+    <string name="comfrim">确定</string>
+    <string name="share_qq_content">来自文字锁屏的分享的分享</string>
+    <string name="start_lock">Enable</string>
+    <string name="setting_help">辅助</string>
+    <string name="setting_first_set">初始设置</string>
+    <string name="setting_first_set_content">锁屏无法使用点这里</string>
+    <string name="setting_notification_listener">读取通知权限</string>
+    <string name="setting_accessibility">Watch Service</string>
+    <string name="webview_detail">处理中</string>
+    <string name="webview_play">福利</string>
+    <string name="setting_play_onkeylock_content">桌面一键快速锁屏</string>
+    <string name="setting_play_onkeylock">一键锁屏插件</string>
+    <string name="wechat">WeChat</string>
+    <string name="wechat_moment">Moment</string>
+    <string name="qq">QQ</string>
+    <string name="qzone">QZone</string>
+    <string name="contribute">Contribute</string>
+    <string name="tieba">TieBa</string>
+    <string name="home">WEB</string>
+    <string name="qq_group">QQ Group</string>
+    <string name="weibo">WeiBo</string>
+    <string name="more">MORE</string>
+    <string name="work_name">Title</string>
+    <string name="work_author">Author</string>
+    <string name="work_contact">Contact</string>
+    <string name="about_info">致谢</string>
+    <string name="try_again">Tap here, try again.</string>
+
+    <string-array name="week">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+    <string-array name="month">
+        <item>Jan.</item>
+        <item>Feb.</item>
+        <item>Mar.</item>
+        <item>Apr.</item>
+        <item>May.</item>
+        <item>Jun.</item>
+        <item>Jul.</item>
+        <item>Aug.</item>
+        <item>Sep.</item>
+        <item>Oct.</item>
+        <item>Nov.</item>
+        <item>Dec.</item>
+    </string-array>
+
+    <string name="plugin_size_title">Adjust the slider to change size.</string>
+    <string name="plugin_size_low">small</string>
+    <string name="plugin_size_high">big</string>
+    <string name="font_show1">文字</string>
+    <string name="font_show2">锁屏</string>
+    <string name="font_size">10M</string>
+    <string name="guide_first_title">小米用户特别设置</string>
+    <string name="guide_title_content">请完成以下操作,否则锁屏可能无法正常工作</string>
+    <string name="guide_open_window">打开悬浮窗</string>
+    <string name="guide_open_window_content">请打开悬浮窗,否则锁屏无法正常使用</string>
+    <string name="guide_startself">设置信任列表/开机自启动</string>
+    <string name="guide_startself_content">避免锁屏重启或清理后锁屏消失</string>
+    <string name="guide_offsystem">关闭系统自带锁屏</string>
+    <string name="guide_offsystem_content">避免出现双锁屏现象</string>
+    <string name="guide_create_lock_shortcut">创建一键锁屏快捷方式</string>
+    <string name="finish">完成</string>
+    <string name="special_set">特别设置</string>
+    <string name="please_turn_off_null">请将锁屏选择为[无]</string>
+    <string name="turn_off_system_lockscreen">关闭系统锁屏</string>
+    <string name="guide_failed">跳转失败请手动设置</string>
+    <string name="loading">正在加载</string>
+    <string name="network_error">网络错误</string>
+    <string name="page_end">页面到底</string>
+    <string name="save_to_phone">保存到手机</string>
+    <string name="share">分享</string>
+    <string name="paper_hot">精选</string>
+    <string name="paper_2">二次元</string>
+    <string name="paper_famous">明星</string>
+    <string name="paper_beutiful">唯美</string>
+    <string name="paper_game">游戏</string>
+    <string name="paper_youth">青春</string>
+    <string name="long_click_to_download">长按图片可以当锁屏背景用哦^_^</string>
+    <string name="download_fail_try_again">图片下载失败,请重试</string>
+    <string name="wallpaper_save_to_nature">壁纸已保存到您的相册</string>
+    <string name="play_title">标题</string>
+    <string name="please_search_and_add">搜索"文字锁屏"添加关注</string>
+    <string name="about_thankyou">感谢以下用户对我们的热心支持,我们会努力做到更好</string>
+    <string name="word_pop">流行</string>
+    <string name="word_lyrics">歌词</string>
+    <string name="word_love">爱情</string>
+    <string name="word_inspirational">励志</string>
+    <string name="word_poetry">诗文</string>
+    <string name="more_change">More</string>
+    <string name="open_album">Album</string>
+    <string name="text_image">Custom</string>
+    <string name="sticker_hot">Featured</string>
+    <string name="sticker_cartoon">Cartoon</string>
+    <string name="sticker_star">Star</string>
+    <string name="sticker_character">Character</string>
+    <string name="sticker_emotion">Emotion</string>
+    <string name="setting_text_guide_startself_v6">Auto startup</string>
+    <string name="share_weibo_content">#文字锁屏创意大赛# 这是我在@文字锁屏 DIY的创意锁屏！！你能看出来它的解锁方式吗？！是不是很炫酷！赶快下载文字锁屏和我一决高下吧~下载地址：http://a.app.qq.com/o/simple.jsp?pkgname=cn.opda.android.activity</string>
+    <string name="accessibility_title">Sticker Lock - WATCH SERVICE</string>
+    <string name="accessibility_desc">↗↗Enable the option↗↗\nThen go to back.</string>
+    <string name="title_activity_diy_guide">DiyGuideActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="guide_setting_title">文字君发现您的手机尚未进行设置，为了让锁屏正常工作，麻烦亲动手设置部分权限</string>
+    <string name="title_activity_guide_settings">GuideSettingsActivity</string>
+    <string name="hello_world">Hello world!</string>
+     <string name="click_to_skip">点击跳过</string>
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#626262" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.3dip"
+            android:layout_gravity="fill_horizontal"
+            android:background="#4f4f4f" />
+
+        <ListView
+            android:id="@+id/plug_text_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="5dp"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="#4f4f4f"
+            android:dividerHeight="1px"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" >
+        </ListView>
+
+</FrameLayout>

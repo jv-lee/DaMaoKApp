@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.lockstudio.sticklocker.view.LockContainer
+        android:id="@+id/lockcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:splitMotionEvents="false" >
+    </com.lockstudio.sticklocker.view.LockContainer>
+
+    <com.lockstudio.sticklocker.view.ControllerContainerView2
+        android:id="@+id/controller_container_layout_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/diy_tab"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/diy_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_min_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/trans_90_black"
+        android:gravity="center"
+        android:minHeight="@dimen/tab_min_height"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/diy_tab_wallpaper"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tab_min_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/sticker_resource_tab_style"
+                android:text="@string/diy_tab_wallpaper" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="10dip"
+            android:layout_gravity="center_vertical"
+            android:background="@color/trans_white" />
+
+        <LinearLayout
+            android:id="@+id/diy_tab_word"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tab_min_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/sticker_resource_tab_style"
+                android:text="@string/diy_tab_word" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="10dip"
+            android:layout_gravity="center_vertical"
+            android:background="@color/trans_white" />
+
+        <LinearLayout
+            android:id="@+id/diy_tab_plugin"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tab_min_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/diy_tab_plugin_textview"
+                style="@style/sticker_resource_tab_style"
+                android:text="@string/diy_tab_plugin" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="10dip"
+            android:layout_gravity="center_vertical"
+            android:background="@color/trans_white" />
+
+        <LinearLayout
+            android:id="@+id/diy_tab_sticker"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tab_min_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/sticker_resource_tab_style"
+                android:text="@string/diy_tab_sticker" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="10dip"
+            android:layout_gravity="center_vertical"
+            android:background="@color/trans_white" />
+
+        <LinearLayout
+            android:id="@+id/diy_tab_locker"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tab_min_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/diy_tab_locker_textview"
+                style="@style/sticker_resource_tab_style"
+                android:text="@string/diy_tab_locker" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/diy_controller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/diy_cancel_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/diy_cancel_selector" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/diy_ok_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/diy_ok_selector" />
+    </LinearLayout>
+
+    <com.lockstudio.sticklocker.view.ControllerContainerView
+        android:id="@+id/controller_container_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" />
+
+</RelativeLayout>

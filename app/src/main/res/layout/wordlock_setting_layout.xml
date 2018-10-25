@@ -1,0 +1,243 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/plugin_tab_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/tab_min_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/trans_90_black"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/plugin_tab_font"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/tab_font_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/tab_bg_selector"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="3dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_plugin_tab_font" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dip"
+                    android:gravity="center"
+                    android:text="@string/plugin_tab_font"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/diy_tab_button_font_size" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="10dip"
+            android:layout_gravity="center_vertical"
+            android:background="@color/trans_white" />
+
+        <RelativeLayout
+            android:id="@+id/plugin_tab_size"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/tab_size_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/tab_bg_selector"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="3dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_plugin_tab_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dip"
+                    android:gravity="center"
+                    android:text="@string/plugin_tab_size"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/diy_tab_button_font_size" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="10dip"
+            android:layout_gravity="center_vertical"
+            android:background="@color/trans_white" />
+
+        <RelativeLayout
+            android:id="@+id/plugin_tab_color"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/tab_color_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/tab_bg_selector"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="3dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_plugin_tab_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dip"
+                    android:gravity="center"
+                    android:text="@string/plugin_tab_color"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/diy_tab_button_font_size" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="10dip"
+            android:layout_gravity="center_vertical"
+            android:background="@color/trans_white" />
+
+        <RelativeLayout
+            android:id="@+id/plugin_tab_light"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/tab_light_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/tab_bg_selector"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="3dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_plugin_tab_light" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dip"
+                    android:gravity="center"
+                    android:text="@string/plugin_tab_light"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/diy_tab_button_font_size" />
+            </LinearLayout>
+        </RelativeLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="10dip"
+            android:layout_gravity="center_vertical"
+            android:background="@color/trans_white" />
+
+        <RelativeLayout
+            android:id="@+id/plugin_tab_shape"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/tab_shape_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/tab_bg_selector"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="3dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_plugin_tab_shape" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dip"
+                    android:gravity="center"
+                    android:text="@string/plugin_tab_shape"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/diy_tab_button_font_size" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dip"
+        android:layout_above="@id/plugin_tab_bar"
+        android:background="@color/trans_75_black" >
+
+        <include
+            android:id="@+id/font_setting_view"
+            layout="@layout/plugin_font_view"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/size_setting_view"
+            layout="@layout/plugin_size_view"
+            android:visibility="gone" />
+        
+        <include
+            android:id="@+id/color_setting_view"
+            layout="@layout/plugin_color_view"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/light_setting_view"
+            layout="@layout/plugin_light_view"
+            android:visibility="gone" />
+        <include
+            android:id="@+id/shape_setting_view"
+            layout="@layout/plugin_shape_view"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

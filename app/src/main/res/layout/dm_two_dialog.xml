@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/dm_two_dialog_001"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#e5ffffff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/dm_two_dialog_002"
+            android:layout_width="match_parent"
+            android:layout_height="51dp" >
+
+            <TextView
+                android:id="@+id/dm_two_dialog_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="立刻下载"
+                android:textColor="#333"
+                android:textSize="19sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/dm_two_dialog_003"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#dedede" />
+
+        <RelativeLayout
+            android:id="@+id/dm_two_dialog_004"
+            android:layout_width="match_parent"
+            android:layout_height="160dp" >
+
+            <TextView
+                android:id="@+id/dm_two_dialog_tv_content_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="31dp"
+                android:gravity="center"
+                android:text="3D终极车神2"
+                android:textColor="#333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/dm_two_dialog_tv_content_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dm_two_dialog_tv_content_1"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:text="该产品有9754839人觉得"
+                android:textColor="#f34b4b"
+                android:textSize="11sp" />
+
+            <RelativeLayout
+                android:id="@+id/dm_two_dialog_005"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dm_two_dialog_tv_content_2"
+                android:layout_marginTop="31dp" >
+
+                <LinearLayout
+                    android:id="@+id/dm_two_dialog_006"
+                    android:layout_width="247dp"
+                    android:layout_height="38dp"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/dm_two_dialog_tv_cancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/dm_biankuang_two_dialog_cancel"
+                        android:gravity="center"
+                        android:text="取消"
+                        android:textColor="#9c9c9c"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/dm_two_dialog_tv_ok"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/dm_biankuang_two_dialog_ok"
+                        android:gravity="center"
+                        android:text="确定"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

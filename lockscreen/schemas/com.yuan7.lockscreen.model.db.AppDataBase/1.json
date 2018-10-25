@@ -1,0 +1,67 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "193e798d9009954e7641ec5e4bb5fbcf",
+    "entities": [
+      {
+        "tableName": "label_table",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `hiapkId` INTEGER, `type` INTEGER, `greatnumber` INTEGER, `oldimgUrl` TEXT, `smallImgUrl` TEXT, `focusImgUrl` TEXT, `localPath` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "hiapkId",
+            "columnName": "hiapkId",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "type",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "greatnumber",
+            "columnName": "greatnumber",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "oldimgUrl",
+            "columnName": "oldimgUrl",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "smallImgUrl",
+            "columnName": "smallImgUrl",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "focusImgUrl",
+            "columnName": "focusImgUrl",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "localPath",
+            "columnName": "localPath",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"193e798d9009954e7641ec5e4bb5fbcf\")"
+    ]
+  }
+}

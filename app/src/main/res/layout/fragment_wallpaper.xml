@@ -1,0 +1,49 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f0f0f0">
+
+    <LinearLayout
+        android:id="@+id/main_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_title_bar_color"
+        android:gravity="center"
+        android:minHeight="@dimen/main_title_bar_min_height"
+        android:orientation="horizontal" >
+
+        <!--  
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/title_wallpaper" />
+            -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:text="壁纸"
+            android:textColor="@color/white"
+            android:textSize="21sp"
+             />
+    </LinearLayout>
+
+    
+    <GridView
+        android:id="@+id/wallpaper_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:horizontalSpacing="3dp"
+        android:verticalSpacing="0dp"
+        android:background="#f0f0f0"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:numColumns="2" />
+
+</LinearLayout>

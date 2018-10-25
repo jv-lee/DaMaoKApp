@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="3dp">
+
+    <View
+        android:id="@+id/gridview_item_header_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/gridview_item_wallpaper_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_bg_2"
+        android:orientation="vertical"
+        android:padding="3dp" >
+
+        <com.lockstudio.sticklocker.view.FullWidthImageView
+            android:id="@+id/gridview_item_wallpaper_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wallpaper_group_default"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/black_mask_selector" />
+
+        <TextView
+            android:id="@+id/gridview_item_wallpaper_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:textColor="#4b494c"
+            android:textSize="14sp" />
+    </LinearLayout>
+    
+    <RelativeLayout 
+         android:id="@+id/featured_dm_item" 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:scaleType="fitXY"
+         android:visibility="gone"
+         android:background="@drawable/gridview_firstpage_shape_dm" >
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/gridview_item_zhanwei_view"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:visibility="gone" />
+
+</LinearLayout>

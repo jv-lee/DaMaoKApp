@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DaMaoKApp.iml" filepath="$PROJECT_DIR$/DaMaoKApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lockscreen/lockscreen.iml" filepath="$PROJECT_DIR$/lockscreen/lockscreen.iml" />
+    </modules>
+  </component>
+</project>

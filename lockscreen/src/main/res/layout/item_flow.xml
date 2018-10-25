@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="search"
+            type="com.yuan7.lockscreen.model.entity.SearchEntity" />
+    </data>
+
+    <FrameLayout
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:textSize="@dimen/font_size_big"
+            android:textColor="@color/nav_text_press"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{search.searchName}" />
+
+    </FrameLayout>
+
+
+</layout>

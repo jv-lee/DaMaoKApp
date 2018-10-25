@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+    
+   <RelativeLayout
+       android:id="@+id/plugin_tab_color"
+        android:layout_width="match_parent"
+        android:layout_height="120dip"
+        android:background="@color/trans_black" >
+
+        <include
+            android:id="@+id/color_setting_view"
+            layout="@layout/plugin_color_view"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

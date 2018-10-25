@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="40dp">
+
+    <TextView
+        android:id="@+id/footer_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:minHeight="32dp"
+        android:textColor="@color/secondary_textcolor"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:text="@string/page_end"
+        android:visibility="gone"/>
+
+    <com.lockstudio.sticklocker.view.TwoBallsLoadingView
+        android:id="@+id/footer_loading_view"
+        android:layout_width="30dp"
+        android:layout_height="10dp"
+        android:layout_centerInParent="true"
+        android:background="#00000000">
+    </com.lockstudio.sticklocker.view.TwoBallsLoadingView>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:layout_gravity="center_vertical"
+    android:background="#f1f6f8"
+    android:gravity="center_vertical"
+    android:minHeight="64dp"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_launcher_2"
+        android:scaleType="center"
+        android:background="#d1d2ca" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/textivew_notification"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="#5d717c"
+            android:textSize="16sp" />
+
+        <ProgressBar
+            android:id="@+id/progressbar_notification"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:max="100"
+            android:progressDrawable="@drawable/progressbar_style" />
+    </LinearLayout>
+
+</LinearLayout>

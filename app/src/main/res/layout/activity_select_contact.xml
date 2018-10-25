@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_bar_backgroud"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+        
+        <include layout="@layout/title_bar" 
+            android:id="@+id/layout_contact_top"
+            android:layout_alignParentTop="true"/>
+
+        <!-- <RelativeLayout
+            android:id="@+id/layout_contact_top"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+            android:id="@+id/title_bar_left_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/more_back"
+            android:drawablePadding="@dimen/padding_maintop"
+            android:minWidth="@dimen/title_bar_height_min"
+            android:paddingLeft="@dimen/more_back"
+            android:gravity="center"
+            android:paddingRight="@dimen/padding_maintop"
+            android:singleLine="true"
+            android:textColor="#606060"
+            android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/title_bar_right_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="2dp"
+                android:gravity="center_vertical"
+                android:minWidth="@dimen/title_bar_height_min"
+                android:padding="15dip"
+                android:singleLine="true"
+                android:text="@string/title_concact"
+                android:textColor="#606060"
+            	android:textSize="@dimen/title_bar_right_size" />
+        </RelativeLayout> -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:layout_below="@+id/layout_contact_top" >
+
+            <ListView
+                android:id="@+id/lv_select_contact"
+                android:layout_toLeftOf="@+id/addresslist_sidebar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="0.5dp"
+                android:scrollbars="none" >
+            </ListView>
+            
+            <!-- android:divider="#e8e8e8" -->
+
+            <com.lockstudio.launcher.fancy.view.QuickIndexBar
+                android:id="@+id/addresslist_sidebar"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/white" />
+            <!-- android:background="#B51421" -->
+
+            <TextView
+                android:id="@+id/text_float"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_index"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="" />
+
+</LinearLayout>

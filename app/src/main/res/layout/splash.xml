@@ -1,0 +1,64 @@
+<FrameLayout
+    android:id="@+id/splash_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_title_bar_color"
+        android:id="@+id/splash_root_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/main_title_bar_color"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@color/main_title_bar_color"/>
+
+            <View
+                android:id="@+id/splash_white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/splash_logo"
+            android:layout_width="@dimen/about_logo_size"
+            android:layout_height="@dimen/about_logo_size"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_logo"
+            android:contentDescription="@string/app_name"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/splash_logo"
+            android:scaleType="fitXY"
+            android:src="@drawable/instruction"
+            android:contentDescription="@string/app_name"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/splash_starting_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="@string/app_name"
+            android:visibility="invisible"
+            android:src="@drawable/splash_starting_baidu"/>
+    </RelativeLayout>
+</FrameLayout>

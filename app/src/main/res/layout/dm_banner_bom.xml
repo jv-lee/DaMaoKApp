@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/dm_banner_bom_content"
+        android:layout_width="fill_parent"
+        android:layout_height="61dp"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/dm_banner_bom_txt_download"
+            android:layout_width="60dp"
+            android:layout_height="27.3dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/dm_press_button_applist"
+            android:gravity="center"
+            android:text="下载"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/dm_banner_bom_img_icon"
+            android:layout_width="40.6dp"
+            android:layout_height="40.6dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:src="@drawable/dm_icon_ball_one" />
+
+        <TextView
+            android:id="@+id/dm_banner_bom_txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/dm_banner_bom_img_icon"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/dm_banner_bom_img_icon"
+            android:singleLine="true"
+            android:text="高德导航"
+            android:textColor="#454545"
+            android:textSize="13.3sp" />
+
+        <TextView
+            android:id="@+id/dm_banner_bom_txt_ms"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/dm_banner_bom_txt_name"
+            android:layout_below="@+id/dm_banner_bom_txt_name"
+            android:layout_marginRight="65dp"
+            android:layout_marginTop="2dp"
+            android:singleLine="true"
+            android:text="为车主提供的安全、易用、高效的导航软件高效的导航软件"
+            android:textColor="#8d8d8d"
+            android:textSize="9.3sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:background="#c6c6c6" />
+
+        <ImageView
+            android:id="@+id/dm_banner_bom_img_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:src="@drawable/dm_close_001" />
+    </RelativeLayout>
+
+</LinearLayout>

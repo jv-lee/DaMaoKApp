@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/dm_findcenter_item_lin_main"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/dm_press_list_bai_havebk"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/dm_findcenter_item_img_icon"
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:layout_marginLeft="14.9dp"
+            android:src="@drawable/dm_icon_ball_one" />
+
+        <TextView
+            android:id="@+id/dm_findcenter_item_tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="@string/dm_shopcenter_title"
+            android:textColor="#1c1c1c"
+            android:textSize="15.3sp" />
+
+        <ImageView
+            android:id="@+id/dm_findcenter_item_img_more"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/dm_icon_find_more" />
+    </LinearLayout>
+
+</LinearLayout>

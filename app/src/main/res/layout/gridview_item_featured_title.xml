@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.lockstudio.sticklocker.view.BannerImageView
+        android:id="@+id/gridview_item_featured_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/black_mask_selector"
+        android:background="@drawable/wallpaper_banner_default"/>
+
+</FrameLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <com.lockstudio.sticklocker.view.IconImageEditView
+        android:id="@+id/iconImageEditView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bottom_layout" />
+
+    <GridView
+        android:id="@+id/shape_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_layout"
+        android:background="@color/colorpicker_bg"
+        android:horizontalSpacing="10dp"
+        android:numColumns="7"
+        android:padding="15dp"
+        android:verticalSpacing="5dp" />
+
+    <LinearLayout
+        android:id="@id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_min_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/banner_bg"
+        android:gravity="center"
+        android:minHeight="@dimen/tab_min_height"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/shape_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tab_min_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/sticker_resource_tab_style"
+                android:text="@string/button_shape" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="10dip"
+            android:layout_gravity="center_vertical"
+            android:background="@color/trans_white" />
+
+        <LinearLayout
+            android:id="@+id/rotate_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tab_min_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/sticker_resource_tab_style"
+                android:text="@string/button_rotate" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/diy_ok_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/diy_ok_selector" />
+
+</RelativeLayout>

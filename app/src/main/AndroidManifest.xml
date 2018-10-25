@@ -1,0 +1,610 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.opda.android.activity">
+
+    <!--<uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />-->
+    <!--<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />-->
+    <!--<uses-permission android:name="android.permission.SEND_SMS" />-->
+    <!--<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />-->
+    <!--<uses-permission android:name="android.permission.RECEIVE_SMS" />-->
+    <!--<uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />-->
+    <!--<uses-permission android:name="android.permission.VIBRATE" />-->
+    <!--<uses-permission android:name="android.permission.INTERNET" />-->
+    <!--<uses-permission android:name="android.permission.GET_TASKS" />-->
+    <!--<uses-permission android:name="android.permission.WRITE_SETTINGS" />-->
+    <!--<uses-permission android:name="android.permission.DISABLE_KEYGUARD" />-->
+    <!--<uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+    <!--<uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />-->
+    <!--<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />-->
+    <!--<uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+    <!--<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />-->
+    <!--<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />-->
+    <!--<uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />-->
+    <!--<uses-permission android:name="android.permission.READ_SMS" />-->
+    <!--<uses-permission android:name="android.permission.READ_CALL_LOG" />-->
+    <!--<uses-permission android:name="android.permission.SET_WALLPAPER" />-->
+    <!--<uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_BROWSER" />-->
+    <!--<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />-->
+    <!--&lt;!&ndash; 悬浮窗必加权限 &ndash;&gt;-->
+    <!--<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />-->
+    <!--&lt;!&ndash; 使用相机 &ndash;&gt;-->
+    <!--<uses-feature-->
+        <!--android:name="android.hardware.camera"-->
+        <!--android:required="true" />-->
+
+    <!--<uses-permission android:name="android.permission.FLASHLIGHT" />-->
+    <!--<uses-permission android:name="android.permission.WAKE_LOCK" />-->
+    <!--<uses-permission android:name="android.permission.CAMERA" />-->
+
+    <!--<uses-feature android:name="android.hardware.camera.autofocus" />-->
+    <!--&lt;!&ndash; 定位�?��的权�? &ndash;&gt;-->
+    <!--<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
+    <!--&lt;!&ndash; 推�?相关的权�? &ndash;&gt;-->
+    <!--<uses-permission android:name="android.permission.READ_LOGS" />-->
+    <!--<uses-permission android:name="android.permission.WAKE_LOCK" />-->
+
+    <!--<application-->
+
+        <!--android:allowBackup="true"-->
+        <!--android:excludeFromRecents="true"-->
+
+
+        <!--android:largeHeap="true"-->
+        <!--android:persistent="true"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--&gt;-->
+
+        <!--&lt;!&ndash; 友盟key  5af0066af29d987e9300022b &ndash;&gt;-->
+        <!--<meta-data-->
+            <!--android:name="UMENG_APPKEY"-->
+            <!--android:value="5af0066af29d987e9300022b" />-->
+        <!--<meta-data-->
+            <!--android:name="UMENG_CHANNEL"-->
+            <!--android:value="FirstApp" />-->
+        <!--<meta-data-->
+            <!--android:name="cocos_aid"-->
+            <!--android:value="1000014030" />-->
+        <!--&lt;!&ndash; 请写入自定义的渠道ID，用于按渠道精准推�?�? &ndash;&gt;-->
+        <!--<meta-data-->
+            <!--android:name="cocos_cid"-->
+            <!--android:value="FirstApp" />-->
+        <!--&lt;!&ndash; 大猫科技 &ndash;&gt;-->
+        <!--<meta-data-->
+            <!--android:name="HZDM_LLBX_APPID"-->
+            <!--android:value="10000007" />-->
+        <!--<meta-data-->
+            <!--android:name="HZDM_LLBX_CHANNELID"-->
+            <!--android:value="FirstApp" />-->
+
+        <!--&lt;!&ndash; 注册广播接收�? &ndash;&gt;-->
+        <!--&lt;!&ndash;  <receiver android:name="com.android.bts.NWReceiver" >-->
+             <!--<intent-filter>-->
+                 <!--<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />-->
+                 <!--<action android:name="android.intent.action.ACTION_POWER_CONNECTED" />-->
+             <!--</intent-filter>-->
+         <!--</receiver> &ndash;&gt;-->
+        <!--&lt;!&ndash; 声明app key &ndash;&gt;-->
+        <!--&lt;!&ndash; <meta-data-->
+            <!--android:name="BTS_APP_KEY"-->
+            <!--android:value="sticklock" /> &ndash;&gt;-->
+
+        <!--<activity-->
+            <!--android:name="com.qq.e.union.demo.SplashActivity"-->
+            <!--android:configChanges="orientation|keyboardHidden|screenSize"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:label="@string/app_name"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/AppTheme"-->
+            <!--android:windowSoftInputMode="stateAlwaysHidden|adjustPan|adjustResize" >-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.MainActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:label="@string/app_name"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/TranslucentTheme" >-->
+        <!--</activity>-->
+
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.DiyActivity"-->
+            <!--android:configChanges="orientation|keyboardHidden|screenSize"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:label="@string/app_name"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/FullscreenTheme"-->
+            <!--android:windowSoftInputMode="adjustResize|stateUnchanged|adjustPan" >-->
+
+            <!--&lt;!&ndash; stateAlwaysHidden|adjustPan|adjustResize &ndash;&gt;-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.FakeActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:launchMode="singleInstance"-->
+            <!--android:screenOrientation="nosensor"-->
+            <!--android:theme="@style/FakeTheme"-->
+            <!--android:windowSoftInputMode="stateAlwaysHidden" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.FakeADActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:launchMode="singleInstance"-->
+            <!--android:screenOrientation="nosensor"-->
+            <!--android:theme="@style/FakeTheme"-->
+            <!--android:windowSoftInputMode="stateAlwaysHidden" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.AboutActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:label="@string/app_name"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/TranslucentTheme" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.SettingActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:label="@string/app_name"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/TranslucentTheme" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.AuthorInfoActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:label="@string/app_name"-->
+            <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.SelectImageActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/Theme.PageIndicatorDefaults" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.PasterStoreActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/TranslucentTheme" />-->
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.PasterRemoveActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/TranslucentTheme" />-->
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.PasterDetailActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/TranslucentTheme" />-->
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.WebviewActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:label="@string/app_name"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/TranslucentTheme" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.SettingGuideActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:label="@string/app_name"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/TranslucentTheme" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.MoreSettingActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.WallpaperPreviewActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:label="@string/app_name"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/FullscreenTheme" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.PaperEditActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:label="@string/app_name"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/TranslucentTheme" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.WallpaperListActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:label="@string/app_name"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/TranslucentTheme" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.WallpaperGroupActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:label="@string/app_name"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/TranslucentTheme" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.WallpaperStoreActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:label="@string/app_name"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/TranslucentTheme" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.MiuiDetailsActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:label="@string/app_name"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/TranslucentTheme" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.LockThemePreviewActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/FullscreenTheme" >-->
+        <!--</activity>-->
+
+        <!--<service android:name="com.lockstudio.sticklocker.service.CoreService" />-->
+        <!--<service-->
+            <!--android:name="com.lockstudio.sticklocker.service.SystemNotificationListener"-->
+            <!--android:label="@string/app_name"-->
+            <!--android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.service.notification.NotificationListenerService" />-->
+            <!--</intent-filter>-->
+        <!--</service>-->
+        <!--<service-->
+            <!--android:name="com.lockstudio.sticklocker.service.SystemNotificationService"-->
+            <!--android:label="@string/accessibility_title"-->
+            <!--android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.accessibilityservice.AccessibilityService" />-->
+            <!--</intent-filter>-->
+
+            <!--<meta-data-->
+                <!--android:name="android.accessibilityservice"-->
+                <!--android:resource="@xml/system_notification_config" />-->
+        <!--</service>-->
+
+        <!--&lt;!&ndash; <receiver android:name="com.lockstudio.sticklocker.receiver.BootReceiver" >-->
+            <!--<intent-filter android:priority="999" >-->
+                <!--<action android:name="android.intent.action.BOOT_COMPLETED" />-->
+                <!--<action android:name="android.intent.action.ACTION_SHUTDOWN" />-->
+                <!--<action android:name="android.intent.action.REBOOT" />-->
+                <!--<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />-->
+            <!--</intent-filter>-->
+        <!--</receiver> &ndash;&gt;-->
+        <!--<receiver android:name="com.lockstudio.sticklocker.receiver.PackageReplacedReceiver" >-->
+            <!--<intent-filter android:priority="999" >-->
+                <!--<action android:name="android.intent.action.MY_PACKAGE_REPLACED" />-->
+
+                <!--<data android:scheme="package" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.WelfareActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/TranslucentTheme" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.CreateLoveLockPasswordActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/FullscreenTheme" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.CreateGesturePasswordActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/FullscreenTheme" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.CreateGesture12PasswordActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/FullscreenTheme" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.CreatePasswordLockActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/FullscreenTheme" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.CreateWordPasswordLockActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/FullscreenTheme" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.CreateNumPasswordLockActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/FullscreenTheme" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.IconImageEditActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/FullscreenTheme" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.TextImageEditActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/FullscreenTheme" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.AdListActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/TranslucentTheme" >-->
+        <!--</activity>-->
+        <!--&lt;!&ndash;<activity&ndash;&gt;-->
+            <!--&lt;!&ndash;android:name="com.lockstudio.sticklocker.activity.FindThemeActivity"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:excludeFromRecents="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:screenOrientation="portrait"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:theme="@style/TranslucentTheme" >&ndash;&gt;-->
+        <!--&lt;!&ndash;</activity>&ndash;&gt;-->
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.DialogPushActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/TransparentDialogTheme" >-->
+        <!--</activity>-->
+
+        <!--<service android:name="com.lockstudio.sticklocker.service.DownloadService" />-->
+        <!--<service-->
+            <!--android:name="com.lockstudio.sticklocker.service.DPService"-->
+            <!--android:process=":DPService" />-->
+
+        <!--<activity-->
+            <!--android:name="com.umeng.fb.ConversationActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:theme="@style/TranslucentTheme"-->
+            <!--android:windowSoftInputMode="stateHidden" />-->
+        <!--<activity-->
+            <!--android:name="com.tencent.tauth.AuthActivity"-->
+            <!--android:configChanges="orientation|keyboardHidden"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:launchMode="singleTask"-->
+            <!--android:noHistory="true"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/TranslucentTheme" >-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.VIEW" />-->
+
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+                <!--<category android:name="android.intent.category.BROWSABLE" />-->
+
+                <!--<data android:scheme="tencent100739898" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+        <!--&lt;!&ndash;<activity&ndash;&gt;-->
+            <!--&lt;!&ndash;android:name="com.tencent.plus.ImageActivity"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:excludeFromRecents="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:theme="@style/TranslucentTheme" />&ndash;&gt;-->
+        <!--<activity-->
+            <!--android:name="com.tencent.connect.common.AssistActivity"-->
+            <!--android:configChanges="orientation|keyboardHidden"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/TranslucentTheme" >-->
+        <!--</activity>-->
+
+        <!--&lt;!&ndash;<service&ndash;&gt;-->
+            <!--&lt;!&ndash;android:name="com.cocos.push.service.CCPushService"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:enabled="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:exported="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:process=":push" >&ndash;&gt;-->
+            <!--&lt;!&ndash;<intent-filter>&ndash;&gt;-->
+                <!--&lt;!&ndash;<action android:name="cocos.push.service" />&ndash;&gt;-->
+            <!--&lt;!&ndash;</intent-filter>&ndash;&gt;-->
+        <!--&lt;!&ndash;</service>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;  <receiver-->
+             <!--android:name="com.cocos.push.client.CCPushClientReceiver"-->
+             <!--android:process=":push" >-->
+             <!--<intent-filter>-->
+                 <!--<action android:name="android.intent.action.BOOT_COMPLETED" />-->
+                 <!--<action android:name="com.cocos.push.service.action.notification.SHOW" />-->
+                 <!--<action android:name="com.cocos.push.service.action.notification.CANCEL" />-->
+                 <!--<action android:name="com.cocos.push.service.action.UPDATE" />-->
+                 <!--<action android:name="com.cocos.push.service.action.AUTOCHECK" />-->
+             <!--</intent-filter>-->
+         <!--</receiver> &ndash;&gt;-->
+
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.PushActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:label=""-->
+            <!--android:launchMode="singleInstance"-->
+            <!--android:screenOrientation="nosensor"-->
+            <!--android:theme="@style/FakeTheme" >-->
+        <!--</activity>-->
+
+        <!--&lt;!&ndash;  <receiver android:name="com.lockstudio.sticklocker.receiver.CCReceiver" >-->
+             <!--<intent-filter>-->
+                 <!--<action android:name="com.cocos.push.service.action.MESSAGE" />-->
+                 <!--<action android:name="com.cocos.push.service.action.MESSAGE_V2" />-->
+                 <!--<action android:name="com.cocos.push.service.action.MESSAGE_V3" />-->
+                 <!--接收启停push、设置删除标签�?设置删除帐号等操作的反馈-->
+                 <!--<action android:name="com.cocos.push.service.action.RECEIVE" />-->
+             <!--</intent-filter>-->
+         <!--</receiver> &ndash;&gt;-->
+        <!--<receiver-->
+            <!--android:name="com.lockstudio.sticklocker.receiver.WifiReceiver"-->
+            <!--android:enabled="true" >-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.net.wifi.STATE_CHANGE" />-->
+                <!--<action android:name="android.net.wifi.RSSI_CHANGED" />-->
+                <!--<action android:name="android.net.wifi.WIFI_STATE_CHANGED" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!--&lt;!&ndash; �?��锁屏   start &ndash;&gt;-->
+        <!--&lt;!&ndash; 锁屏界面 &ndash;&gt;-->
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.LockScreenActivity"-->
+            <!--android:icon="@drawable/shortcut_lock"-->
+            <!--android:label="@string/lock_title" >-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.VIEW" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+
+        <!--&lt;!&ndash; 锁屏�?���?��的receiver &ndash;&gt;-->
+        <!--<receiver-->
+            <!--android:name="com.lockstudio.sticklocker.receiver.LockScreenReceiver"-->
+            <!--android:description="@string/lock_description"-->
+            <!--android:label="@string/lock_title"-->
+            <!--android:permission="android.permission.BIND_DEVICE_ADMIN" >-->
+            <!--<meta-data-->
+                <!--android:name="android.app.device_admin"-->
+                <!--android:resource="@xml/my_admin" />-->
+
+            <!--<intent-filter>-->
+                <!--<action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+        <!--&lt;!&ndash; �?��锁屏   end &ndash;&gt;-->
+
+        <!--<service android:name="com.lockstudio.sticklocker.service.CCService" />-->
+
+        <!--<activity-->
+            <!--android:name="com.lockstudio.sticklocker.activity.GuideSettingsActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:label="@string/title_activity_guide_settings"-->
+            <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+
+        <!--&lt;!&ndash;&lt;!&ndash; 大猫科技配置环境 &ndash;&gt;&ndash;&gt;-->
+        <!--&lt;!&ndash;<service&ndash;&gt;-->
+            <!--&lt;!&ndash;android:name="com.dm.host.ResidentService"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:exported="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:process=":nk_v1" >&ndash;&gt;-->
+            <!--&lt;!&ndash;<intent-filter android:priority="2147483647" >&ndash;&gt;-->
+            <!--&lt;!&ndash;</intent-filter>&ndash;&gt;-->
+        <!--&lt;!&ndash;</service>&ndash;&gt;-->
+        <!--&lt;!&ndash;<service&ndash;&gt;-->
+            <!--&lt;!&ndash;android:name="com.dm.host.DownLService"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:exported="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:process=":nk_v1" >&ndash;&gt;-->
+            <!--&lt;!&ndash;<intent-filter android:priority="2147483647" >&ndash;&gt;-->
+            <!--&lt;!&ndash;</intent-filter>&ndash;&gt;-->
+        <!--&lt;!&ndash;</service>&ndash;&gt;-->
+
+        <!--&lt;!&ndash; <receiver android:name="com.dm.host.BootReceiver" >-->
+            <!--<intent-filter android:priority="2147483647" >-->
+                <!--<action android:name="android.provider.Telephony.SMS_RECEIVED" />-->
+            <!--</intent-filter>-->
+            <!--<intent-filter android:priority="2147483647" >-->
+                <!--<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />-->
+                <!--<action android:name="android.intent.action.BOOT_COMPLETED" />-->
+            <!--</intent-filter>-->
+            <!--<intent-filter android:priority="2147483647" >-->
+                <!--<action android:name="android.intent.action.USER_PRESENT" />-->
+            <!--</intent-filter>-->
+            <!--<intent-filter android:priority="2147483647" >-->
+                <!--<action android:name="android.intent.action.PACKAGE_ADDED" />-->
+                <!--<action android:name="android.intent.action.PACKAGE_REPLACED" />-->
+                <!--<action android:name="android.intent.action.PACKAGE_REMOVED" />-->
+
+                <!--<data android:scheme="package" />-->
+            <!--</intent-filter>-->
+        <!--</receiver> &ndash;&gt;-->
+
+        <!--&lt;!&ndash;<activity&ndash;&gt;-->
+            <!--&lt;!&ndash;android:name="com.dm.host.EntranceActivity"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:configChanges="orientation|keyboardHidden|screenSize"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:hardwareAccelerated="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:launchMode="singleTask" >&ndash;&gt;-->
+            <!--&lt;!&ndash;<intent-filter>&ndash;&gt;-->
+                <!--&lt;!&ndash;<action android:name="android.intent.action.MAIN" />&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<category android:name="android.intent.category.DEFAULT" />&ndash;&gt;-->
+            <!--&lt;!&ndash;</intent-filter>&ndash;&gt;-->
+            <!--&lt;!&ndash;<intent-filter>&ndash;&gt;-->
+                <!--&lt;!&ndash;<action android:name="android.intent.action.VIEW" />&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<category android:name="android.intent.category.DEFAULT" />&ndash;&gt;-->
+                <!--&lt;!&ndash;<category android:name="android.intent.category.BROWSABLE" />&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<data&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:host="cn.opda.android.activity"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:scheme="hzdmkj" />&ndash;&gt;-->
+            <!--&lt;!&ndash;</intent-filter>&ndash;&gt;-->
+        <!--&lt;!&ndash;</activity>&ndash;&gt;-->
+        <!--&lt;!&ndash; 大猫科技 &ndash;&gt;-->
+        <!--&lt;!&ndash; 乐商�? &ndash;&gt;-->
+        <!--&lt;!&ndash;  <receiver android:name="com.zplay.android.sdk.zplayad.module.receiver.DownloadCompleteReceiver" >-->
+             <!--<intent-filter>-->
+                 <!--<action android:name="android.intent.action.DOWNLOAD_COMPLETE" />-->
+             <!--</intent-filter>-->
+         <!--</receiver>-->
+         <!--<receiver android:name="com.zplay.android.sdk.zplayad.module.receiver.InstallCompleteReceiver" >-->
+             <!--<intent-filter>-->
+                 <!--<action android:name="android.intent.action.PACKAGE_ADDED" />-->
+
+                 <!--<data android:scheme="package" />-->
+             <!--</intent-filter>-->
+         <!--</receiver>-->
+
+         <!--<service android:name="com.zplay.android.sdk.zplayad.module.service.OpenPkgService" />-->
+         <!--<service android:name="com.zplay.android.sdk.zplayad.module.service.ADEventReport" />-->
+
+         <!--<meta-data-->
+             <!--android:name="lenovo.open.appid"-->
+             <!--android:value="1601120415075.app.ln" /> &ndash;&gt;-->
+        <!--&lt;!&ndash; value=" 在此处填入申请的 lenovo open AppID" &ndash;&gt;-->
+        <!--&lt;!&ndash; 乐商�? &ndash;&gt;-->
+
+        <!--&lt;!&ndash; tuia &ndash;&gt;-->
+        <!--<service android:name="com.floatwindow.xishuang.float_lib.service.FloatMonkService" />-->
+
+        <!--<activity-->
+            <!--android:name="com.tuia.tool.tuiaadactivity"-->
+            <!--android:configChanges="orientation|keyboardHidden"-->
+            <!--android:hardwareAccelerated="true"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/AppTheme" />-->
+
+        <!--&lt;!&ndash; gdt &ndash;&gt;-->
+        <!--<service-->
+            <!--android:name="com.qq.e.comm.DownloadService"-->
+            <!--android:exported="false" />-->
+
+        <!--<activity-->
+            <!--android:name="com.qq.e.ads.ADActivity"-->
+            <!--android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />-->
+
+        <!--&lt;!&ndash;<receiver&ndash;&gt;-->
+            <!--&lt;!&ndash;android:name="com.help.myReceiver"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:enabled="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:exported="true" >&ndash;&gt;-->
+            <!--&lt;!&ndash;<intent-filter>&ndash;&gt;-->
+                <!--&lt;!&ndash;&lt;!&ndash; 自定义Action &ndash;&gt;&ndash;&gt;-->
+                <!--&lt;!&ndash;<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />&ndash;&gt;-->
+                <!--&lt;!&ndash;<action android:name="android.intent.action.USER_PRESENT"/>&ndash;&gt;-->
+                <!--&lt;!&ndash;<action android:name="android.intent.action.DATE_CHANGED"/>&ndash;&gt;-->
+                <!--&lt;!&ndash;<action android:name="android.intent.action.BOOT_COMPLETED"/>&ndash;&gt;-->
+                <!--&lt;!&ndash;<action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>&ndash;&gt;-->
+                <!--&lt;!&ndash;<action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;</intent-filter>&ndash;&gt;-->
+        <!--&lt;!&ndash;</receiver>&ndash;&gt;-->
+
+    <!--</application>-->
+
+</manifest>
