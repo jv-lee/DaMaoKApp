@@ -28,7 +28,7 @@ abstract class BaseVDiloagFragment<DB : ViewDataBinding>(var layoutId: Int) : Di
     private val mLifecycleRegistry = LifecycleRegistry(this)
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        binding = DataBindingUtil.inflate(inflater, layoutId, container, false)
+        binding = DataBindingUtil.inflate(inflater!!, layoutId, container, false)
         return binding.root
     }
 

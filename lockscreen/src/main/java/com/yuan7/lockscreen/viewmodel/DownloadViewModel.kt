@@ -22,7 +22,7 @@ class DownloadViewModel @Inject constructor(dataRepository: DownloadRepository, 
 
     override fun bindData() {
         this.path = MutableLiveData()
-        fileObservable = Transformations.switchMap(path, { input ->
+        fileObservable = Transformations.switchMap(path!!, { input ->
             if (input == null) {
                 ABSENT
             }

@@ -35,7 +35,7 @@ class LabelViewModel @Inject constructor(dataRepository: LabelRepository, applic
         this.labelId = MutableLiveData()
         this.type = MutableLiveData()
 
-        labelObservable = Transformations.switchMap(page, { input ->
+        labelObservable = Transformations.switchMap(page!!, { input ->
             if (input == 0) {
                 ABSENT
             }

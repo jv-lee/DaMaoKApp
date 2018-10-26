@@ -19,7 +19,7 @@ class FindViewModel @Inject constructor(dataRepository: FindRepository, applicat
     override fun bindData() {
         this.value = MutableLiveData()
 
-        searchObservable = Transformations.switchMap(value, { input ->
+        searchObservable = Transformations.switchMap(value!!, { input ->
             if (input == 0) {
                 ABSENT
             }

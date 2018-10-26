@@ -2,51 +2,59 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "193e798d9009954e7641ec5e4bb5fbcf",
+    "identityHash": "b6b398473da938094d362e242a90b440",
     "entities": [
       {
         "tableName": "label_table",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `hiapkId` INTEGER, `type` INTEGER, `greatnumber` INTEGER, `oldimgUrl` TEXT, `smallImgUrl` TEXT, `focusImgUrl` TEXT, `localPath` TEXT)",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `hiapkId` INTEGER NOT NULL, `type` INTEGER NOT NULL, `greatnumber` INTEGER NOT NULL, `oldimgUrl` TEXT, `smallImgUrl` TEXT, `focusImgUrl` TEXT, `localPath` TEXT)",
         "fields": [
           {
             "fieldPath": "id",
             "columnName": "id",
-            "affinity": "INTEGER"
+            "affinity": "INTEGER",
+            "notNull": true
           },
           {
             "fieldPath": "hiapkId",
             "columnName": "hiapkId",
-            "affinity": "INTEGER"
+            "affinity": "INTEGER",
+            "notNull": true
           },
           {
             "fieldPath": "type",
             "columnName": "type",
-            "affinity": "INTEGER"
+            "affinity": "INTEGER",
+            "notNull": true
           },
           {
             "fieldPath": "greatnumber",
             "columnName": "greatnumber",
-            "affinity": "INTEGER"
+            "affinity": "INTEGER",
+            "notNull": true
           },
           {
             "fieldPath": "oldimgUrl",
             "columnName": "oldimgUrl",
-            "affinity": "TEXT"
+            "affinity": "TEXT",
+            "notNull": false
           },
           {
             "fieldPath": "smallImgUrl",
             "columnName": "smallImgUrl",
-            "affinity": "TEXT"
+            "affinity": "TEXT",
+            "notNull": false
           },
           {
             "fieldPath": "focusImgUrl",
             "columnName": "focusImgUrl",
-            "affinity": "TEXT"
+            "affinity": "TEXT",
+            "notNull": false
           },
           {
             "fieldPath": "localPath",
             "columnName": "localPath",
-            "affinity": "TEXT"
+            "affinity": "TEXT",
+            "notNull": false
           }
         ],
         "primaryKey": {
@@ -61,7 +69,7 @@
     ],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"193e798d9009954e7641ec5e4bb5fbcf\")"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"b6b398473da938094d362e242a90b440\")"
     ]
   }
 }

@@ -175,7 +175,7 @@ afterEvaluate {
 dependencies {
     compileOnly fileTree(include: ['*.jar'], dir: 'libs')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    kapt "com.android.databinding:compiler:$binding_version"
+//    kapt "com.android.databinding:compiler:$binding_version"
 
     //    implementation "com.android.support:appcompat-v7:$support_version"
     implementation "com.android.support:cardview-v7:$support_version"

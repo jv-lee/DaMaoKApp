@@ -31,7 +31,7 @@ abstract class BaseVMFragment<DB : ViewDataBinding, VM : ViewModel>(var layoutId
     private val mLifecycleRegistry = LifecycleRegistry(this)
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        binding = DataBindingUtil.inflate(inflater, layoutId, container, false)
+        binding = DataBindingUtil.inflate(inflater!!, layoutId, container, false)
         viewModel = ViewModelProviders.of(this, viewModelFactory).get(vmClass)
         return binding.root
     }

@@ -31,7 +31,7 @@ class LocalViewModel @Inject constructor(repository: LocalRepository, applicatio
         this.page = MutableLiveData()
         this.type = MutableLiveData()
 
-        labelObservable = Transformations.switchMap(page, { input ->
+        labelObservable = Transformations.switchMap(page!!, { input ->
             if (input == null) {
                 ABSENT
             }

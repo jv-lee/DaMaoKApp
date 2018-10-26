@@ -29,7 +29,7 @@ class SearchLabelViewModel @Inject constructor(repository: SearchLabelRepository
     override fun bindData() {
         this.params = MutableLiveData()
 
-        labelObservable = Transformations.switchMap(params, { input ->
+        labelObservable = Transformations.switchMap(params!!, { input ->
             if (input == null) {
                 ABSENT
             }
